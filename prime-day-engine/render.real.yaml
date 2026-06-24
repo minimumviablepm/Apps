@@ -1,0 +1,42 @@
+# REAL-PRODUCT Render Blueprint (reference copy).
+# Render auto-detects render.yaml at the REPO ROOT, which is the free mock DEMO.
+# To run the real product, copy this file's contents over the root render.yaml
+# (or paste these settings into the dashboard), then set the secrets below.
+# See DEPLOY.md for the full walkthrough.
+#
+# Secret env vars to set in the dashboard after deploy:
+#   KEEPA_API_KEY         your paid Keepa API key
+#   PDE_KEEPA_CATEGORIES  comma-separated Keepa category node ids to ingest
+#   PDE_AFFILIATE_TAG     your Amazon Associates tag (optional)
+# (For free PA-API lite mode instead of Keepa, see DEPLOY.md.)
+
+services:
+  - type: web
+    name: prime-day-engine
+    runtime: python
+    plan: starter            # persistent disk requires a paid instance (~$7/mo)
+    rootDir: prime-day-engine/backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api_fastapi:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: PDE_DB_PATH
+        value: /data/prime_day.db      # database lives on the persistent disk
+      - key: PDE_ENABLE_SCHEDULER
+        value: "1"                      # run ingest in-process (FR-2)
+      - key: PDE_INGEST_SOURCE
+        value: keepa
+      - key: PDE_INGEST_HOURS
+        value: "0,9,15"                 # 3x daily
+      - key: PDE_AMAZON_DOMAIN
+        value: www.amazon.com
+      - key: KEEPA_API_KEY
+        sync: false                     # set as a secret in the dashboard
+      - key: PDE_KEEPA_CATEGORIES
+        sync: false                     # e.g. "172282,1055398"
+      - key: PDE_AFFILIATE_TAG
+        sync: false                     # optional

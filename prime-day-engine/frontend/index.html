@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Ultimate Prime Day List</title>
+    <meta
+      name="description"
+      content="Prime Day deals that are genuinely discounted, genuinely good, and genuinely rare — scored by Monica's Deal Score."
+    />
+    <!-- Tailwind via CDN keeps this a zero-build frontend (PRD Section 13 intent). -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { prime: "#00a8e1", ink: "#131921", gold: "#febd69" },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-100 text-slate-900 antialiased">
+    <div id="app"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
