@@ -1,0 +1,22 @@
+name: tests
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  prime-day-engine:
+    name: Prime Day Deal Engine (acceptance tests)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run tests (AC-1..AC-8 + scoring)
+        working-directory: prime-day-engine/backend
+        run: python -m unittest discover -s tests -p "test_*.py" -v
