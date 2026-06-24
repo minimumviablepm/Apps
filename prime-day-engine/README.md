@@ -53,10 +53,15 @@ no `?api=` is needed there.
 
 ## Deploying
 
-See **`DEPLOY.md`** — one always-on Render web service serves the API + UI, owns
-the database on a persistent disk, and runs the 3×-daily Keepa ingest in-process.
-Real deals require a paid Keepa API key; you can deploy with `PDE_INGEST_SOURCE=mock`
-first to see it live with no key.
+**Free live demo (no key, no cost):** the repo-root `render.yaml` is a free Render
+blueprint that self-seeds synthetic data on boot. One click:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/minimumviablepm/Apps)
+
+It's the real app and scoring — only the data is synthetic. See **`DEPLOY.md`** for
+the real product (an always-on service with a persistent disk that runs the
+3×-daily ingest) using either **Keepa** (paid, instant history) or the free
+**PA-API lite mode** (builds history over time).
 
 ## Run the tests (acceptance criteria AC-1..AC-8)
 

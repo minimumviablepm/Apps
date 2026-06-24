@@ -1,13 +1,14 @@
-# Render Blueprint for the Prime Day Deal Engine.
-# One always-on web service that: serves the API + frontend, owns the SQLite
-# database on a persistent disk, and runs the 3x-daily Keepa ingest in-process
-# (PRD FR-2). Deploy: push to GitHub, then New + > Blueprint and pick this repo.
+# REAL-PRODUCT Render Blueprint (reference copy).
+# Render auto-detects render.yaml at the REPO ROOT, which is the free mock DEMO.
+# To run the real product, copy this file's contents over the root render.yaml
+# (or paste these settings into the dashboard), then set the secrets below.
+# See DEPLOY.md for the full walkthrough.
 #
-# After it deploys, set the two secret env vars in the dashboard:
-#   KEEPA_API_KEY       your paid Keepa API key
+# Secret env vars to set in the dashboard after deploy:
+#   KEEPA_API_KEY         your paid Keepa API key
 #   PDE_KEEPA_CATEGORIES  comma-separated Keepa category node ids to ingest
-# Optional:
-#   PDE_AFFILIATE_TAG   your Amazon Associates tag (affiliate links)
+#   PDE_AFFILIATE_TAG     your Amazon Associates tag (optional)
+# (For free PA-API lite mode instead of Keepa, see DEPLOY.md.)
 
 services:
   - type: web

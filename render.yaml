@@ -1,0 +1,24 @@
+# Free one-click DEMO of the Prime Day Deal Engine.
+#
+# Synthetic data, no secrets, no database disk — it self-seeds on boot. This is
+# what the "Deploy to Render" button uses (Render auto-detects render.yaml at the
+# repo root).
+#
+# To run the REAL product (real Amazon deals), see prime-day-engine/DEPLOY.md and
+# prime-day-engine/render.real.yaml: switch PDE_INGEST_SOURCE to keepa or paapi,
+# add the secrets, bump the plan, and attach a persistent disk.
+
+services:
+  - type: web
+    name: prime-day-engine-demo
+    runtime: python
+    plan: free
+    rootDir: prime-day-engine/backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api_fastapi:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    envVars:
+      - key: PDE_INGEST_SOURCE
+        value: mock          # synthetic demo catalog
+      - key: PDE_AUTOSEED
+        value: "1"           # seed the store on first boot

@@ -138,3 +138,31 @@ def _maybe_start_scheduler():
         print(f"[scheduler] in-process ingest scheduled at hours {hours}")
     except ImportError:
         print("[scheduler] APScheduler not installed; baseline run only")
+
+
+# Free-demo convenience: if the store is empty and we're on the synthetic source,
+# seed it on boot in a background thread. Lets a disk-less free instance work with
+# zero secrets. Disable with PDE_AUTOSEED=0. Real sources (keepa/paapi) ingest via
+# the scheduler instead.
+@app.on_event("startup")
+def _maybe_autoseed():
+    if os.environ.get("PDE_AUTOSEED", "1") == "0":
+        return
+    if os.environ.get("PDE_INGEST_SOURCE", "mock").lower() not in ("mock", ""):
+        return
+    import threading
+
+    import db as _db
+
+    conn = _db.connect(CONFIG)
+    _db.init_db(conn)
+    n = conn.execute("SELECT COUNT(*) AS n FROM products").fetchone()["n"]
+    conn.close()
+    if n == 0:
+        import pipeline as _pl
+        from ingestion.mock_source import MockSource
+
+        print("[autoseed] empty store — seeding synthetic demo data…")
+        threading.Thread(
+            target=lambda: _pl.run(MockSource(), cfg=CONFIG), daemon=True
+        ).start()

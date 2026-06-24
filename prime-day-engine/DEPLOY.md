@@ -14,11 +14,30 @@ Postgres + Vercel-Cron rewrite. See "Vercel alternative" at the bottom.)
    without it; the tag just earns referral credit.
 3. A **Render** account (<https://render.com>) connected to this GitHub repo.
 
-## One-time deploy (Render Blueprint)
+## Fastest path: free demo (no key, no cost)
+
+Want a live URL to click through right now, with no Keepa key and no secrets?
+
+1. In Render: **New +  →  Blueprint**, pick this repo (or use a "Deploy to
+   Render" button). Render auto-detects the root **`render.yaml`**, which is the
+   free demo: `plan: free`, synthetic data, no disk.
+2. Deploy. On first boot it **self-seeds** the synthetic catalog and serves the
+   full UI + API at the URL Render gives you.
+
+That's the real app and real scoring — only the *data* is synthetic. (Free Render
+services sleep after ~15 min idle and take ~50s to wake; fine for a demo.)
+When you're ready for real deals, follow the section below.
+
+## Real product (Render Blueprint)
+
+The real product needs an always-on instance with a persistent disk (so the
+database survives restarts) and a real data source. Use the settings in
+**`prime-day-engine/render.real.yaml`** — copy them over the root `render.yaml`
+(or edit the service in the dashboard to match): `plan: starter`, a 1 GB disk at
+`/data`, `PDE_INGEST_SOURCE=keepa`, and the scheduler enabled.
 
 1. Push this repo to GitHub (already done if you're reading this on the PR).
-2. In Render: **New +  →  Blueprint**, pick this repo. Render reads
-   `prime-day-engine/render.yaml` and creates the web service + persistent disk.
+2. In Render: **New +  →  Blueprint** with the real-product settings applied.
 3. When prompted (or under the service's **Environment** tab) set the secrets:
    - `KEEPA_API_KEY` = your Keepa key
    - `PDE_KEEPA_CATEGORIES` = the Keepa category **node ids** to ingest,
