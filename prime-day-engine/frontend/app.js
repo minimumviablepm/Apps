@@ -38,7 +38,48 @@ const BAND_STYLE = {
 };
 
 // ---------------- data ----------------
+// Two modes: "api" (talks to the engine, e.g. on Render) or "static" (filters a
+// prebuilt deals.json client-side, e.g. on a Vercel static deploy). Detected once.
+let MODE = "api";
+let DATASET = null;
+
+async function detectMode() {
+  if (API) { MODE = "api"; return; }          // explicit ?api= / localStorage override
+  try {
+    const r = await fetch("/api/categories", { cache: "no-store" });
+    if (r.ok) { MODE = "api"; return; }
+  } catch {}
+  try {
+    const r = await fetch("deals.json", { cache: "no-store" });
+    if (r.ok) { DATASET = await r.json(); MODE = "static"; return; }
+  } catch {}
+  MODE = "api"; // nothing reachable; loadDeals() will surface an error
+}
+
+// Client-side mirror of the server's query layer (service.py) for static mode.
+function clientQuery(deals, f, sort, page, pageSize) {
+  let rows = deals.filter((d) => {
+    if (f.category && d.category !== f.category) return false;
+    if (f.subcategory && d.subcategory !== f.subcategory) return false;
+    if (f.price_min !== "" && d.current_price < +f.price_min) return false;
+    if (f.price_max !== "" && d.current_price > +f.price_max) return false;
+    if (f.min_discount !== "" && (d.discount_pct ?? 0) < +f.min_discount) return false;
+    return true;
+  });
+  const cmp = {
+    deal_score: (a, b) => b.deal_score - a.deal_score,
+    discount: (a, b) => (b.discount_pct ?? 0) - (a.discount_pct ?? 0),
+    price_asc: (a, b) => a.current_price - b.current_price,
+    price_desc: (a, b) => b.current_price - a.current_price,
+  }[sort] || ((a, b) => b.deal_score - a.deal_score);
+  rows.sort((a, b) => cmp(a, b) || a.asin.localeCompare(b.asin));
+  const total = rows.length;
+  const start = (page - 1) * pageSize;
+  return { total, page, page_size: pageSize, sort, results: rows.slice(start, start + pageSize) };
+}
+
 async function loadCategories() {
+  if (MODE === "static") { state.categories = DATASET.categories || {}; return; }
   try {
     const r = await fetch(`${API}/api/categories`);
     state.categories = await r.json();
@@ -66,11 +107,15 @@ async function loadDeals() {
   state.error = null;
   render();
   try {
-    const r = await fetch(`${API}/api/deals?${buildQuery()}`);
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    state.data = await r.json();
+    if (MODE === "static") {
+      state.data = clientQuery(DATASET.deals, state.filters, state.sort, state.page, state.page_size);
+    } else {
+      const r = await fetch(`${API}/api/deals?${buildQuery()}`);
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      state.data = await r.json();
+    }
   } catch (e) {
-    state.error = `Could not reach the deal engine at ${API}. Is the API running? (${e.message})`;
+    state.error = `Could not reach the deal engine${API ? " at " + API : ""}. Is the API running? (${e.message})`;
     state.data = null;
   } finally {
     state.loading = false;
@@ -89,7 +134,13 @@ function header() {
          The <span class="text-gold">Ultimate</span> <span class="text-prime">Prime Day</span> List</h1>
        <p class="text-sm text-slate-300 mt-1">
          Real discounts · genuinely good products · genuinely rare prices —
-         ranked by <strong>Monica's Deal Score</strong>.</p>`
+         ranked by <strong>Monica's Deal Score</strong>.</p>
+       ${
+         MODE === "static" && DATASET && DATASET.demo
+           ? `<p class="mt-2 inline-block text-xs bg-amber-400 text-ink font-semibold px-2 py-1 rounded">
+                Demo — synthetic sample data, not live Amazon prices</p>`
+           : ""
+       }`
     )
   );
   return h;
@@ -345,9 +396,14 @@ async function openDetail(asin) {
 
   let d;
   try {
-    const r = await fetch(`${API}/api/deals/${asin}`);
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    d = await r.json();
+    if (MODE === "static") {
+      d = DATASET.deals.find((x) => x.asin === asin);
+      if (!d) throw new Error("not found");
+    } else {
+      const r = await fetch(`${API}/api/deals/${asin}`);
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      d = await r.json();
+    }
   } catch (e) {
     panel.innerHTML = `<p class="text-rose-600">Could not load deal (${e.message}).</p>`;
     return;
@@ -440,6 +496,7 @@ function render() {
 
 (async function init() {
   render();
+  await detectMode();
   await loadCategories();
   render();
   await loadDeals();
