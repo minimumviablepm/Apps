@@ -70,6 +70,58 @@ Want to see it running before paying for Keepa? Set `PDE_INGEST_SOURCE=mock` (an
 you can leave `KEEPA_API_KEY` unset). The same deploy then serves the synthetic
 catalog so you can click through the real UI immediately.
 
+## Free option: PA-API "lite" mode (no Keepa subscription)
+
+If you don't want to pay for Keepa, the engine can run on Amazon's **official,
+free** Product Advertising API instead. Honest trade-offs:
+
+- PA-API gives the **current price only**, so the engine **records each reading**
+  and builds its **own price history over time** (`history.py`). It's weak on day
+  one — nothing qualifies until it has seen prices drop below their recorded
+  average — and gets better the longer it runs.
+- PA-API does **not** return numeric star ratings / review counts, so lite mode
+  **skips the quality gate and Pillar C** and scores on the two price pillars
+  (Deal Strength + Exclusivity, reweighted 60/40, configurable).
+
+**What you need:**
+
+1. An **Amazon Associates** account approved for PA-API. Approval requires **3
+   qualifying sales within 180 days** of signing up — so you typically launch with
+   affiliate links first, make a few sales, then PA-API access unlocks.
+2. From Associates Central → Tools → Product Advertising API, generate your
+   **Access Key** and **Secret Key** and note your **Partner Tag** (store id).
+3. A watchlist: ASINs to track (`PDE_PAAPI_ASINS`) and/or keywords to discover
+   them (`PDE_PAAPI_KEYWORDS`). PA-API has no Keepa-style "find all deals", so you
+   curate what to watch.
+
+**To use it on Render**, change these env vars (instead of the Keepa ones):
+
+```
+PDE_INGEST_SOURCE = paapi
+PDE_LITE_MODE     = 1
+PAAPI_ACCESS_KEY  = <your key>      (secret)
+PAAPI_SECRET_KEY  = <your secret>   (secret)
+PAAPI_PARTNER_TAG = <your store id>
+PAAPI_COUNTRY     = US
+PDE_PAAPI_KEYWORDS = "robot vacuum, air fryer, headphones"   (or PDE_PAAPI_ASINS)
+```
+
+and `pip install python-amazon-paapi` (already in `requirements.txt`). Locally:
+
+```bash
+PDE_INGEST_SOURCE=paapi PDE_LITE_MODE=1 python seed.py --source paapi
+```
+
+### Which source should I use?
+
+| | Keepa | PA-API lite | Mock |
+|---|---|---|---|
+| Cost | ~€49/mo | Free | Free |
+| Real deals | ✅ | ✅ (curated watchlist) | ❌ demo data |
+| Price history | ✅ immediately | ⚠️ builds over weeks | n/a |
+| Quality/ratings scoring | ✅ | ❌ (price pillars only) | ✅ |
+| Setup | API key | Associates approval | none |
+
 ## Vercel alternative
 
 If you specifically want Vercel: keep the frontend there as a static site, and

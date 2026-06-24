@@ -19,9 +19,19 @@ FastAPI, APScheduler) are import-guarded and listed in `requirements.txt`.
 | `api_fastapi.py` | FastAPI API (same `service.py`, same contract). | §10, §13 |
 | `ingestion/mock_source.py` | Deterministic synthetic data for offline runs. | §4 |
 | `ingestion/keepa_source.py` | Real Keepa adapter (discovery + enrichment). | §4, FR-1/3 |
+| `ingestion/paapi_source.py` | Free Amazon PA-API adapter (lite mode). | §4 |
+| `history.py` | Self-recording price history for lite mode (builds averages / all-time low / exclusivity from accumulated readings). | §4 |
 | `scheduler.py` | 3×-daily ingest cadence (APScheduler or sleep fallback). | FR-2 |
 | `seed.py` | CLI to (re)build the store from mock or Keepa. | §7.1 |
-| `tests/` | `test_acceptance.py` (AC-1..AC-8), `test_scoring.py` (formulas + edge cases). | §12, §11 |
+| `tests/` | `test_acceptance.py` (AC-1..AC-8), `test_scoring.py` (formulas + edge cases), `test_lite_mode.py` (PA-API self-recording + price-only scoring). | §12, §11 |
+
+### Data sources
+
+| Source | `--source` / `PDE_INGEST_SOURCE` | Cost | Needs |
+|---|---|---|---|
+| Mock | `mock` (default) | free | nothing |
+| Keepa | `keepa` | ~€49/mo | `KEEPA_API_KEY` |
+| PA-API lite | `paapi` (+ `PDE_LITE_MODE=1`) | free | Associates approval; price history builds over time |
 
 ## Configuration (env vars)
 

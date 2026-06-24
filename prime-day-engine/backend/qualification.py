@@ -37,6 +37,20 @@ def qualify(
 
     short_history = raw.price_history_days < 365
 
+    # Lite mode (PA-API): no numeric ratings/review/return data available, so the
+    # gate reduces to "is this a real discount?" (FR-6). Quality checks are
+    # skipped rather than silently passed.
+    if cfg.lite_mode:
+        ref90 = raw.avg_price_90d
+        if ref90 is None or not (raw.current_price < ref90):
+            reasons.append("no_real_discount")
+        return GateResult(
+            qualified=len(reasons) == 0,
+            reasons=reasons,
+            short_history=short_history,
+            thin_peer_set=True,  # peers not computed in lite mode
+        )
+
     # FR-5 review-count handling first (PRD Section 4 / 11 caveat).
     # Null/unknown count => fail (never assume qualification).
     review_count_stale = False

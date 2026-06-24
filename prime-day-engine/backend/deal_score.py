@@ -126,3 +126,14 @@ def composite_score(
         + cfg.weight_exclusivity * pillar_b
         + cfg.weight_quality * pillar_c
     )
+
+
+def composite_lite(pillar_a: float, pillar_b: float, cfg: Config = CONFIG) -> float:
+    """Lite-mode composite from the two price pillars only (no ratings).
+
+    Weights are renormalized so the score stays on a 0-100 scale even though
+    Pillar C is absent.
+    """
+    wa, wb = cfg.weight_lite_deal_strength, cfg.weight_lite_exclusivity
+    total = wa + wb or 1.0
+    return (wa * pillar_a + wb * pillar_b) / total

@@ -14,6 +14,7 @@ from typing import List, Optional
 import db
 from config import CONFIG, Config
 from deal_score import (
+    composite_lite,
     composite_score,
     pillar_deal_strength,
     pillar_exclusivity,
@@ -54,11 +55,22 @@ def score_products(
 ) -> List[Product]:
     """Transform raw products into derived, gated, scored Product records."""
     ingested_at = ingested_at or _now_iso()
-    peer_stats = compute_peer_stats(raws, cfg)
+    # Peers (and the Bayesian rating they need) require ratings, which lite mode
+    # doesn't have — skip peer computation entirely there.
+    peer_stats = {} if cfg.lite_mode else compute_peer_stats(raws, cfg)
     products: List[Product] = []
 
     for raw in raws:
-        ps = peer_stats[raw.asin]
+        if cfg.lite_mode:
+            ps = {
+                "category_mean": None,
+                "bayesian_rating": None,
+                "peer_percentile": None,
+                "thin_peer_set": True,
+                "price_band": price_band(raw.current_price),
+            }
+        else:
+            ps = peer_stats[raw.asin]
         ref = reference_price(raw, cfg)
         discount_pct = None
         if ref and ref > 0:
@@ -81,17 +93,22 @@ def score_products(
                 2,
             )
             pillar_b = round(pillar_exclusivity(excl_pct, gate.short_history, cfg), 2)
-            pillar_c = round(
-                pillar_quality(
-                    ps["bayesian_rating"],
-                    ps["peer_percentile"],
-                    raw.return_rate_flag,
-                    ps["thin_peer_set"],
-                    cfg,
-                ),
-                2,
-            )
-            deal_score = round(composite_score(pillar_a, pillar_b, pillar_c, cfg), 2)
+            if cfg.lite_mode:
+                # No ratings -> no Pillar C; score on the two price pillars.
+                pillar_c = None
+                deal_score = round(composite_lite(pillar_a, pillar_b, cfg), 2)
+            else:
+                pillar_c = round(
+                    pillar_quality(
+                        ps["bayesian_rating"],
+                        ps["peer_percentile"],
+                        raw.return_rate_flag,
+                        ps["thin_peer_set"],
+                        cfg,
+                    ),
+                    2,
+                )
+                deal_score = round(composite_score(pillar_a, pillar_b, pillar_c, cfg), 2)
             band = band_for(deal_score, cfg)
 
         products.append(
@@ -111,7 +128,10 @@ def score_products(
                 discount_pct=discount_pct,
                 star_rating=raw.star_rating,
                 review_count=raw.review_count,
-                bayesian_rating=round(ps["bayesian_rating"], 4),
+                bayesian_rating=(
+                    round(ps["bayesian_rating"], 4)
+                    if ps["bayesian_rating"] is not None else None
+                ),
                 peer_percentile=(
                     round(ps["peer_percentile"], 2)
                     if ps["peer_percentile"] is not None else None

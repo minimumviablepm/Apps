@@ -84,6 +84,9 @@ def connect_memory() -> sqlite3.Connection:
 
 def init_db(conn: sqlite3.Connection) -> None:
     conn.executescript(SCHEMA)
+    # Self-recording price history (used by PA-API lite mode).
+    import history
+    history.init_history(conn)
     conn.commit()
 
 

@@ -23,9 +23,13 @@ def make_source():
     PDE_INGEST_SOURCE=keepa -> real Keepa data (needs KEEPA_API_KEY); anything
     else (default) -> offline synthetic data.
     """
-    if os.environ.get("PDE_INGEST_SOURCE", "mock").lower() == "keepa":
+    src = os.environ.get("PDE_INGEST_SOURCE", "mock").lower()
+    if src == "keepa":
         from ingestion.keepa_source import KeepaSource
         return KeepaSource()
+    if src == "paapi":
+        from ingestion.paapi_source import PaapiSource
+        return PaapiSource()
     return MockSource()
 
 

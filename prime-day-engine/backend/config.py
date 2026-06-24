@@ -52,6 +52,14 @@ class Config:
     return_penalty_high: float = _f("PDE_RETURN_PENALTY", 0.5)
     short_history_pillar_b_cap: float = _f("PDE_SHORT_HISTORY_CAP", 70.0)
 
+    # ---- Lite mode (PA-API self-recording source) ----
+    # PA-API exposes price + metadata but NOT numeric ratings/review counts, so
+    # lite mode drops the quality gate and Pillar C, scoring on the two price
+    # pillars (Deal Strength + Exclusivity) reweighted to sum to 1.0.
+    lite_mode: bool = os.environ.get("PDE_LITE_MODE", "0") == "1"
+    weight_lite_deal_strength: float = _f("PDE_LITE_W_A", 0.6)
+    weight_lite_exclusivity: float = _f("PDE_LITE_W_B", 0.4)
+
     # ---- Curated-list display floor (PRD Section 9.4) ----
     # Qualified products below this composite score are hidden from the curated
     # list (configurable; set to 0 to show everything that passed the gate).
