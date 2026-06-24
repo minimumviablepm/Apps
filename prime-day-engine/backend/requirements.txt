@@ -1,0 +1,12 @@
+# Core engine runs on the Python standard library only (no install needed).
+# These are for the PRODUCTION stack (PRD Section 13) where the network is open.
+
+# Real data backbone (PRD Section 4)
+keepa>=1.3
+
+# Recommended API stack (PRD Section 13) — the stdlib server.py needs none of this
+fastapi>=0.110
+uvicorn[standard]>=0.29
+
+# Scheduler for 3x-daily ingest cadence (PRD FR-2)
+APScheduler>=3.10
