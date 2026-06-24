@@ -10,18 +10,32 @@ from __future__ import annotations
 
 import time
 
+import os
+
 import pipeline
 from config import CONFIG
 from ingestion.mock_source import MockSource
 
 
 def make_source():
-    # Swap to KeepaSource() in production (requires KEEPA_API_KEY).
+    """Pick the data source from the environment.
+
+    PDE_INGEST_SOURCE=keepa -> real Keepa data (needs KEEPA_API_KEY); anything
+    else (default) -> offline synthetic data.
+    """
+    if os.environ.get("PDE_INGEST_SOURCE", "mock").lower() == "keepa":
+        from ingestion.keepa_source import KeepaSource
+        return KeepaSource()
     return MockSource()
 
 
+def _categories():
+    raw = os.environ.get("PDE_KEEPA_CATEGORIES", "").strip()
+    return [c.strip() for c in raw.split(",") if c.strip()] or None
+
+
 def tick():
-    summary = pipeline.run(make_source(), cfg=CONFIG)
+    summary = pipeline.run(make_source(), categories=_categories(), cfg=CONFIG)
     print("[ingest]", summary)
     return summary
 

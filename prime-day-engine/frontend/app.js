@@ -1,11 +1,14 @@
 /* The Ultimate Prime Day List — no-build frontend (vanilla JS).
    Talks to the engine API (PRD Section 10). API base is configurable:
-   ?api=http://host:port  or  localStorage.PDE_API. Defaults to :8000. */
+     ?api=http://host:port   (highest priority)
+     localStorage.PDE_API
+   Default is "" (same origin) — works when the API serves this page (the
+   deployed setup). For the standalone static server, pass ?api=http://localhost:8000. */
 
 const API =
   new URLSearchParams(location.search).get("api") ||
   localStorage.getItem("PDE_API") ||
-  "http://localhost:8000";
+  ""; // same-origin: fetch("/api/deals") hits the API serving this page
 
 const state = {
   categories: {},

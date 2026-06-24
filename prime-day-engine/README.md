@@ -39,16 +39,24 @@ python3 seed.py                 # builds prime_day.db from synthetic data
 python3 server.py               # API on http://localhost:8000
 ```
 
-Then open the frontend (any static server, or just open the file):
+Then open the frontend. The UI defaults to **same-origin**, so for the
+standalone static server tell it where the API is with `?api=`:
 
 ```bash
 cd ../frontend
 python3 -m http.server 5173
-# visit http://localhost:5173  (it calls the API at :8000 by default)
+# visit http://localhost:5173/?api=http://localhost:8000
 ```
 
-Point the UI at a different API with `?api=`, e.g.
-`http://localhost:5173/?api=http://localhost:8000`.
+In the deployed setup the API serves the frontend itself (see `DEPLOY.md`), so
+no `?api=` is needed there.
+
+## Deploying
+
+See **`DEPLOY.md`** — one always-on Render web service serves the API + UI, owns
+the database on a persistent disk, and runs the 3×-daily Keepa ingest in-process.
+Real deals require a paid Keepa API key; you can deploy with `PDE_INGEST_SOURCE=mock`
+first to see it live with no key.
 
 ## Run the tests (acceptance criteria AC-1..AC-8)
 

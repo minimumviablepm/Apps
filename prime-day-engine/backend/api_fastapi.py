@@ -93,3 +93,48 @@ def categories():
         return service.get_categories(conn)
     finally:
         conn.close()
+
+
+# Serve the static frontend from the same origin (single-service deploy).
+# Mounted last so it never shadows the /api routes above. Set PDE_SERVE_FRONTEND=0
+# to disable (e.g. when hosting the frontend separately).
+import os  # noqa: E402
+
+if os.environ.get("PDE_SERVE_FRONTEND", "1") != "0":
+    from fastapi.staticfiles import StaticFiles  # noqa: E402
+
+    _frontend = os.path.join(os.path.dirname(__file__), "..", "frontend")
+    if os.path.isdir(_frontend):
+        app.mount("/", StaticFiles(directory=_frontend, html=True), name="frontend")
+
+
+# In-process scheduled ingest (PRD FR-2). Enabled with PDE_ENABLE_SCHEDULER=1 so
+# a single always-on web service owns the database and refreshes it 3x daily —
+# no separate worker, no shared-disk problem. A baseline run fires on startup in
+# a background thread so it never blocks serving.
+@app.on_event("startup")
+def _maybe_start_scheduler():
+    if os.environ.get("PDE_ENABLE_SCHEDULER") != "1":
+        return
+    import threading
+
+    import db as _db
+    import scheduler as _sched
+
+    conn = _db.connect(CONFIG)
+    _db.init_db(conn)
+    conn.close()
+
+    threading.Thread(target=_sched.tick, daemon=True).start()  # baseline now
+
+    try:
+        from apscheduler.schedulers.background import BackgroundScheduler
+        from apscheduler.triggers.cron import CronTrigger
+
+        sched = BackgroundScheduler()
+        hours = os.environ.get("PDE_INGEST_HOURS", "0,9,15")
+        sched.add_job(_sched.tick, CronTrigger.from_crontab(f"0 {hours} * * *"), id="ingest")
+        sched.start()
+        print(f"[scheduler] in-process ingest scheduled at hours {hours}")
+    except ImportError:
+        print("[scheduler] APScheduler not installed; baseline run only")

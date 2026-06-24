@@ -1,0 +1,41 @@
+# Render Blueprint for the Prime Day Deal Engine.
+# One always-on web service that: serves the API + frontend, owns the SQLite
+# database on a persistent disk, and runs the 3x-daily Keepa ingest in-process
+# (PRD FR-2). Deploy: push to GitHub, then New + > Blueprint and pick this repo.
+#
+# After it deploys, set the two secret env vars in the dashboard:
+#   KEEPA_API_KEY       your paid Keepa API key
+#   PDE_KEEPA_CATEGORIES  comma-separated Keepa category node ids to ingest
+# Optional:
+#   PDE_AFFILIATE_TAG   your Amazon Associates tag (affiliate links)
+
+services:
+  - type: web
+    name: prime-day-engine
+    runtime: python
+    plan: starter            # persistent disk requires a paid instance (~$7/mo)
+    rootDir: prime-day-engine/backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api_fastapi:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: PDE_DB_PATH
+        value: /data/prime_day.db      # database lives on the persistent disk
+      - key: PDE_ENABLE_SCHEDULER
+        value: "1"                      # run ingest in-process (FR-2)
+      - key: PDE_INGEST_SOURCE
+        value: keepa
+      - key: PDE_INGEST_HOURS
+        value: "0,9,15"                 # 3x daily
+      - key: PDE_AMAZON_DOMAIN
+        value: www.amazon.com
+      - key: KEEPA_API_KEY
+        sync: false                     # set as a secret in the dashboard
+      - key: PDE_KEEPA_CATEGORIES
+        sync: false                     # e.g. "172282,1055398"
+      - key: PDE_AFFILIATE_TAG
+        sync: false                     # optional
