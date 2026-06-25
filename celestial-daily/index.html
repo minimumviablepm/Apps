@@ -2,11 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Celestial Daily</title>
     <meta name="description" content="Your daily horoscope, written by the sky overnight." />
+    <style>
+      /* Stop Android Chrome/WebView from auto-inflating ("boosting") text,
+         which stretches the fixed-px layout on mobile. iOS is unaffected,
+         which is why this only showed up on Android. */
+      html {
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+      }
+      /* Predictable sizing so padding never forces horizontal overflow. */
+      *, *::before, *::after { box-sizing: border-box; }
+      body {
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        overflow-x: hidden;
+      }
+    </style>
   </head>
-  <body style="margin:0">
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
