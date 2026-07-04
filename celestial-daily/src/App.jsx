@@ -426,13 +426,13 @@ export default function CelestialDaily() {
       `}</style>
 
       {/* starfield */}
-      <div aria-hidden="true" style={{ position: "fixed", inset: 0, pointerEvents: "none" }}>
+      <div aria-hidden="true" style={{ position: "fixed", inset: 0, pointerEvents: "none", zIndex: 0 }}>
         {stars.map(s => (
           <div key={s.id} style={{ position: "absolute", left: s.x + "%", top: s.y + "%", width: s.r * 2, height: s.r * 2, borderRadius: "50%", background: "#EDE6F7", "--o": s.o, opacity: s.o, animation: `twinkle ${s.d}s ease-in-out infinite ${s.delay}s` }} />
         ))}
       </div>
 
-      <div style={{ maxWidth: 480, margin: "0 auto", padding: "28px 20px 60px", position: "relative" }}>
+      <div style={{ maxWidth: 480, margin: "0 auto", padding: "28px 20px 60px", position: "relative", zIndex: 1 }}>
 
         {/* header */}
         <header style={{ textAlign: "center", marginBottom: 26 }}>
