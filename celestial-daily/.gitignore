@@ -2,3 +2,17 @@ node_modules
 dist
 .DS_Store
 *.local
+
+# Capacitor / native build artifacts (keep android/ and ios/ source, ignore builds)
+.gradle/
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+android/app/release/
+ios/App/build/
+ios/App/Pods/
+ios/App/output/
+DerivedData/
+*.keystore
+*.jks

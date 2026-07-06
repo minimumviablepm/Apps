@@ -488,7 +488,7 @@ export default function CelestialDaily() {
         ))}
       </div>
 
-      <div style={{ maxWidth: 480, margin: "0 auto", padding: "28px 20px 60px", position: "relative", zIndex: 1 }}>
+      <div style={{ maxWidth: 480, margin: "0 auto", paddingTop: "calc(28px + env(safe-area-inset-top))", paddingRight: "calc(20px + env(safe-area-inset-right))", paddingBottom: "calc(60px + env(safe-area-inset-bottom))", paddingLeft: "calc(20px + env(safe-area-inset-left))", position: "relative", zIndex: 1 }}>
 
         {/* header */}
         <header style={{ textAlign: "center", marginBottom: 26 }}>
