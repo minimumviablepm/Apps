@@ -1,0 +1,19 @@
+{
+  "appId": "com.celestialdaily.app",
+  "appName": "Celestial Daily",
+  "webDir": "dist",
+  "backgroundColor": "#080614",
+  "plugins": {
+    "SplashScreen": {
+      "backgroundColor": "#080614",
+      "showSpinner": false,
+      "launchAutoHide": true,
+      "launchShowDuration": 800
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#080614",
+      "overlaysWebView": false
+    }
+  }
+}
