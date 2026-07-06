@@ -335,6 +335,27 @@ function Meter({ label, value, color }) {
   );
 }
 
+// ---------- journal persistence (localStorage, device-local) ----------
+const NOTES_KEY = "celestial-journal-v1";
+const FEED_DAYS = 30;
+function loadNotes() {
+  try {
+    return JSON.parse(localStorage.getItem(NOTES_KEY) || "{}") || {};
+  } catch (e) {
+    return {};
+  }
+}
+function persistNotes(obj) {
+  try {
+    localStorage.setItem(NOTES_KEY, JSON.stringify(obj));
+  } catch (e) { /* storage unavailable/full; notes remain for this session only */ }
+}
+const ACCURACY = [
+  { key: "nailed", label: "Nailed it", color: "#8FB8D9" },
+  { key: "kinda", label: "Kinda", color: "#E3BC6B" },
+  { key: "off", label: "Way off", color: "#D98E9C" },
+];
+
 // ---------- main app ----------
 export default function CelestialDaily() {
   const [signIndex, setSignIndex] = useState(null);
@@ -343,6 +364,9 @@ export default function CelestialDaily() {
   const [cardUrl, setCardUrl] = useState(null);
   const [generating, setGenerating] = useState(false);
   const [shareNote, setShareNote] = useState("");
+  const [view, setView] = useState("today"); // 'today' | 'journal'
+  const [notes, setNotes] = useState(loadNotes);
+  const [onlyNoted, setOnlyNoted] = useState(false);
 
   const now = new Date();
   const dateStr = now.toISOString().slice(0, 10);
@@ -354,6 +378,38 @@ export default function CelestialDaily() {
   const reading = signIndex !== null ? dailyReading(signIndex, dateStr) : null;
   const tomorrowReading = signIndex !== null ? dailyReading(signIndex, tomorrowStr) : null;
   const sign = signIndex !== null ? SIGNS[signIndex] : null;
+
+  const yesterdayStr = new Date(now.getTime() - 86400000).toISOString().slice(0, 10);
+
+  // deterministic feed of the last FEED_DAYS days for the selected sign
+  const feedDays = useMemo(() => {
+    if (signIndex === null) return [];
+    const base = now.getTime();
+    return Array.from({ length: FEED_DAYS }, (_, i) => {
+      const d = new Date(base - i * 86400000);
+      const ds = d.toISOString().slice(0, 10);
+      return { dateStr: ds, date: d, reading: dailyReading(signIndex, ds) };
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [signIndex, dateStr]);
+
+  const noteKey = (ds) => (sign ? sign.name + "::" + ds : ds);
+  const notedCount = sign ? Object.keys(notes).filter(k => k.startsWith(sign.name + "::")).length : 0;
+  const visibleDays = sign
+    ? feedDays.filter(day => (onlyNoted ? !!notes[noteKey(day.dateStr)] : true))
+    : [];
+
+  const updateNote = (key, patch) => {
+    setNotes(prev => {
+      const merged = { ...(prev[key] || {}), ...patch };
+      const hasContent = (merged.note && merged.note.trim()) || merged.accuracy;
+      const next = { ...prev };
+      if (hasContent) next[key] = { ...merged, updatedAt: new Date().toISOString() };
+      else delete next[key];
+      persistNotes(next);
+      return next;
+    });
+  };
 
   const shareText = sign && reading
     ? `${sign.glyph} ${sign.name} \u00b7 ${niceDate}\n\u201c${sign.name}: ${reading.oneliner}\u201d\nLove ${reading.love}% \u00b7 Career ${reading.career}% \u00b7 Chaos ${reading.chaos}%\nLucky number ${reading.luckyNum} \u00b7 Power hour ${reading.powerHour}\nRead yours: Celestial Daily`
@@ -443,6 +499,18 @@ export default function CelestialDaily() {
           <div style={{ width: 54, height: 1, background: "linear-gradient(90deg, transparent, #E3BC6B, transparent)", margin: "12px auto 0" }} />
         </header>
 
+        {/* Today / Journal switch (only once a sign is chosen) */}
+        {signIndex !== null && (
+          <div style={{ display: "flex", gap: 6, background: "rgba(255,255,255,0.04)", border: "1px solid rgba(233,226,245,0.1)", borderRadius: 999, padding: 4, margin: "0 auto 22px", maxWidth: 260 }}>
+            {[["today", "Today"], ["journal", "Journal"]].map(([v, label]) => (
+              <button key={v} className="actionbtn" onClick={() => setView(v)}
+                style={{ flex: 1, cursor: "pointer", border: "none", borderRadius: 999, padding: "8px 0", fontFamily: "'Outfit', sans-serif", fontSize: 12, letterSpacing: 1, textTransform: "uppercase", fontWeight: 600, color: view === v ? "#14102A" : "#9C93B8", background: view === v ? "linear-gradient(120deg, #E3BC6B, #F4E3B2)" : "transparent" }}>
+                {label}
+              </button>
+            ))}
+          </div>
+        )}
+
         {signIndex === null && (
           <section style={{ animation: "rise 0.5s ease" }}>
             <p style={{ textAlign: "center", color: "#9C93B8", fontSize: 14, fontWeight: 300, marginBottom: 22 }}>
@@ -461,7 +529,7 @@ export default function CelestialDaily() {
           </section>
         )}
 
-        {sign && reading && (
+        {sign && reading && view === "today" && (
           <section style={{ animation: "rise 0.5s ease" }}>
 
             {/* hero constellation card */}
@@ -567,6 +635,102 @@ export default function CelestialDaily() {
                 style={{ cursor: "pointer", background: "transparent", border: "none", color: "#7E7499", fontSize: 12, letterSpacing: 1.5, textTransform: "uppercase", fontFamily: "'Outfit', sans-serif" }}>
                 {"\u2190"} Read another sign
               </button>
+            </div>
+          </section>
+        )}
+
+        {/* journal feed */}
+        {sign && view === "journal" && (
+          <section style={{ animation: "rise 0.5s ease" }}>
+
+            {/* journal header */}
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <span style={{ fontSize: 24, color: "#E3BC6B", lineHeight: 1 }}>{sign.glyph}</span>
+                <div>
+                  <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 22, color: "#F2EBDA", lineHeight: 1.1 }}>{sign.name} journal</div>
+                  <div style={{ fontSize: 11, color: "#7E7499", marginTop: 2 }}>{notedCount} {notedCount === 1 ? "reflection" : "reflections"} {"·"} last {FEED_DAYS} days</div>
+                </div>
+              </div>
+              <button className="actionbtn" onClick={() => { setSignIndex(null); setCopied(false); setCardUrl(null); }}
+                style={{ cursor: "pointer", background: "transparent", border: "1px solid rgba(233,226,245,0.2)", borderRadius: 999, padding: "6px 12px", color: "#9C93B8", fontSize: 10, letterSpacing: 1, textTransform: "uppercase", fontFamily: "'Outfit', sans-serif" }}>
+                Change sign
+              </button>
+            </div>
+
+            {/* filter */}
+            <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+              {[["all", "All days"], ["noted", "With notes"]].map(([v, label]) => {
+                const active = (v === "noted") === onlyNoted;
+                return (
+                  <button key={v} className="actionbtn" onClick={() => setOnlyNoted(v === "noted")}
+                    style={{ cursor: "pointer", borderRadius: 999, padding: "6px 14px", fontSize: 11, letterSpacing: 0.5, fontFamily: "'Outfit', sans-serif", border: active ? "1px solid rgba(227,188,107,0.5)" : "1px solid rgba(233,226,245,0.12)", color: active ? "#E3BC6B" : "#9C93B8", background: active ? "rgba(227,188,107,0.08)" : "transparent" }}>
+                    {label}
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* days */}
+            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+              {visibleDays.length === 0 && (
+                <div style={{ textAlign: "center", padding: "34px 16px", border: "1px dashed rgba(233,226,245,0.18)", borderRadius: 16, color: "#7E7499", fontSize: 13, lineHeight: 1.6 }}>
+                  No reflections yet.<br />Add a note to any day and it will appear here.
+                </div>
+              )}
+              {visibleDays.map(day => {
+                const key = noteKey(day.dateStr);
+                const entry = notes[key] || {};
+                const isToday = day.dateStr === dateStr;
+                const label = day.dateStr === dateStr ? "Today"
+                  : day.dateStr === yesterdayStr ? "Yesterday"
+                  : day.date.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+                const hasContent = (entry.note && entry.note.trim()) || entry.accuracy;
+                return (
+                  <div key={key} style={{ border: isToday ? "1px solid rgba(227,188,107,0.4)" : "1px solid rgba(233,226,245,0.1)", borderRadius: 16, padding: "16px 16px 14px", background: isToday ? "linear-gradient(165deg, rgba(227,188,107,0.06), rgba(20,14,40,0.35))" : "rgba(255,255,255,0.02)" }}>
+
+                    {/* date row */}
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 8 }}>
+                      <div style={{ fontSize: 10.5, letterSpacing: 1.5, textTransform: "uppercase", color: isToday ? "#E3BC6B" : "#A6986F" }}>{label}</div>
+                      {hasContent && <span aria-label="has reflection" style={{ width: 7, height: 7, borderRadius: "50%", background: "#E3BC6B", display: "inline-block", boxShadow: "0 0 6px rgba(227,188,107,0.6)" }} />}
+                    </div>
+
+                    {/* one-liner */}
+                    <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontStyle: "italic", fontSize: 16.5, lineHeight: 1.4, color: "#EFE8F8", margin: "0 0 8px" }}>
+                      {"“"}{day.reading.oneliner}{"”"}
+                    </p>
+
+                    {/* mini stats */}
+                    <div style={{ fontSize: 10.5, color: "#9C93B8", letterSpacing: 0.4, marginBottom: 12 }}>
+                      Love {day.reading.love} {"·"} Career {day.reading.career} {"·"} Chaos {day.reading.chaos} {"·"} Mood {day.reading.mood}
+                    </div>
+
+                    {/* note */}
+                    <textarea value={entry.note || ""} onChange={e => updateNote(key, { note: e.target.value })}
+                      placeholder="What actually happened? Add a reflection…"
+                      rows={2}
+                      style={{ width: "100%", resize: "vertical", boxSizing: "border-box", background: "rgba(0,0,0,0.25)", border: "1px solid rgba(233,226,245,0.12)", borderRadius: 10, padding: "10px 12px", color: "#E9E2F5", fontFamily: "'Outfit', sans-serif", fontSize: 13, lineHeight: 1.5, outline: "none" }} />
+
+                    {/* accuracy */}
+                    <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: 8, marginTop: 10 }}>
+                      <span style={{ fontSize: 9.5, letterSpacing: 1, textTransform: "uppercase", color: "#7E7499" }}>Accuracy</span>
+                      {ACCURACY.map(a => {
+                        const on = entry.accuracy === a.key;
+                        return (
+                          <button key={a.key} className="actionbtn" onClick={() => updateNote(key, { accuracy: on ? "" : a.key })}
+                            style={{ cursor: "pointer", borderRadius: 999, padding: "4px 10px", fontSize: 10.5, fontFamily: "'Outfit', sans-serif", border: on ? "1px solid " + a.color : "1px solid rgba(233,226,245,0.12)", color: on ? a.color : "#9C93B8", background: on ? a.color + "18" : "transparent" }}>
+                            {a.label}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div style={{ textAlign: "center", marginTop: 18, fontSize: 10.5, color: "#564E70", fontWeight: 300, letterSpacing: 0.3 }}>
+              Reflections are saved on this device only.
             </div>
           </section>
         )}
