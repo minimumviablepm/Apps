@@ -1,0 +1,57 @@
+name: iOS build (unsigned verify)
+
+# Compiles the Capacitor iOS app on a macOS runner to prove it builds.
+# This lane needs NO Apple account and NO secrets — it does an unsigned
+# simulator build purely to catch breakage. Signing + TestFlight upload is a
+# separate step you enable once you have an Apple Developer account
+# (see celestial-daily/IOS.md).
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "celestial-daily/**"
+      - ".github/workflows/ios-build.yml"
+
+jobs:
+  build:
+    runs-on: macos-14
+    defaults:
+      run:
+        working-directory: celestial-daily
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build web assets
+        run: npm run build
+
+      - name: Add iOS platform (if not present)
+        run: npx cap add ios || echo "iOS platform already exists"
+
+      - name: Sync web build into iOS project
+        run: npx cap sync ios
+
+      - name: Install CocoaPods
+        run: |
+          cd ios/App
+          pod install
+
+      - name: Build (unsigned) to verify it compiles
+        run: |
+          cd ios/App
+          xcodebuild \
+            -workspace App.xcworkspace \
+            -scheme App \
+            -configuration Debug \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            build
