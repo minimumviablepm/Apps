@@ -1,4 +1,8 @@
 import React, { useState, useMemo, useEffect } from "react";
+import { Capacitor } from "@capacitor/core";
+import { Preferences } from "@capacitor/preferences";
+import { Share } from "@capacitor/share";
+import { Filesystem, Directory } from "@capacitor/filesystem";
 
 // ---------- deterministic daily randomness ----------
 function hashStr(s) {
@@ -335,20 +339,35 @@ function Meter({ label, value, color }) {
   );
 }
 
-// ---------- journal persistence (localStorage, device-local) ----------
+// ---------- journal persistence (device-local, durable) ----------
+// Notes are stored via Capacitor Preferences, which persists to native storage
+// (UserDefaults on iOS, SharedPreferences on Android) that the OS does not evict
+// under storage pressure the way it can WKWebView localStorage. localStorage is
+// kept as a synchronous cache (instant first paint) and as a migration source for
+// anyone who used the web app before this change.
 const NOTES_KEY = "celestial-journal-v1";
 const FEED_DAYS = 30;
-function loadNotes() {
+function readLocalNotes() {
   try {
     return JSON.parse(localStorage.getItem(NOTES_KEY) || "{}") || {};
   } catch (e) {
     return {};
   }
 }
-function persistNotes(obj) {
+async function readDurableNotes() {
   try {
-    localStorage.setItem(NOTES_KEY, JSON.stringify(obj));
-  } catch (e) { /* storage unavailable/full; notes remain for this session only */ }
+    const { value } = await Preferences.get({ key: NOTES_KEY });
+    return value ? JSON.parse(value) : null;
+  } catch (e) {
+    return null;
+  }
+}
+function persistNotes(obj) {
+  const json = JSON.stringify(obj);
+  // synchronous cache for fast reloads / web fallback
+  try { localStorage.setItem(NOTES_KEY, json); } catch (e) { /* full or unavailable */ }
+  // durable native store (fire-and-forget; failure only loses this write, not the cache)
+  Preferences.set({ key: NOTES_KEY, value: json }).catch(() => {});
 }
 const ACCURACY = [
   { key: "nailed", label: "Nailed it", color: "#8FB8D9" },
@@ -365,8 +384,29 @@ export default function CelestialDaily() {
   const [generating, setGenerating] = useState(false);
   const [shareNote, setShareNote] = useState("");
   const [view, setView] = useState("today"); // 'today' | 'journal'
-  const [notes, setNotes] = useState(loadNotes);
+  const [notes, setNotes] = useState(readLocalNotes);
   const [onlyNoted, setOnlyNoted] = useState(false);
+
+  // On mount, reconcile the sync cache with the durable native store.
+  useEffect(() => {
+    let active = true;
+    (async () => {
+      const durable = await readDurableNotes();
+      if (!active) return;
+      if (durable) {
+        // durable store is the source of truth
+        setNotes(durable);
+        try { localStorage.setItem(NOTES_KEY, JSON.stringify(durable)); } catch (e) {}
+      } else {
+        // nothing durable yet — migrate any existing cached notes into it
+        const cached = readLocalNotes();
+        if (Object.keys(cached).length) {
+          Preferences.set({ key: NOTES_KEY, value: JSON.stringify(cached) }).catch(() => {});
+        }
+      }
+    })();
+    return () => { active = false; };
+  }, []);
 
   const now = new Date();
   const dateStr = now.toISOString().slice(0, 10);
@@ -439,6 +479,29 @@ export default function CelestialDaily() {
   };
 
   const shareImage = async () => {
+    // On a real device, write the card to disk and hand it to the native OS
+    // share sheet — reliable in iOS/Android WebViews where navigator.share(files)
+    // is not.
+    if (Capacitor.isNativePlatform()) {
+      try {
+        const base64 = cardUrl.split(",")[1];
+        const written = await Filesystem.writeFile({
+          path: fileName,
+          data: base64,
+          directory: Directory.Cache,
+        });
+        await Share.share({
+          title: "Celestial Daily",
+          text: shareText,
+          url: written.uri,
+          files: [written.uri],
+          dialogTitle: "Share your reading",
+        });
+        return;
+      } catch (e) { /* user cancelled or share unavailable — fall through */ }
+      return; // don't trigger a browser download inside the native app
+    }
+    // Browser: Web Share API with the file, otherwise download the PNG.
     try {
       const blob = await (await fetch(cardUrl)).blob();
       const file = new File([blob], fileName, { type: "image/png" });
