@@ -36,6 +36,7 @@ const round: RoundResult = {
 
 beforeEach(async () => {
   await AsyncStorage.clear();
+  jest.clearAllMocks();
   jest.restoreAllMocks();
 });
 
