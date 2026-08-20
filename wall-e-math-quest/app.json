@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Wall-E Math Quest",
+    "slug": "wall-e-math-quest",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "wallemathquest",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "platforms": [
+      "ios"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "requireFullScreen": true,
+      "bundleIdentifier": "com.minimumviablepm.wallemathquest",
+      "infoPlist": {
+        "UIRequiresFullScreen": true,
+        "UISupportedInterfaceOrientations": [
+          "UIInterfaceOrientationPortrait"
+        ]
+      }
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}

@@ -1,0 +1,1827 @@
+[
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "subtraction_within_100",
+    "prompt": "What is 89 - 17?",
+    "options": [
+      {
+        "label": "62",
+        "isCorrect": false
+      },
+      {
+        "label": "73",
+        "isCorrect": false
+      },
+      {
+        "label": "72",
+        "isCorrect": true
+      },
+      {
+        "label": "82",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-001"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "What is 6 x 2?",
+    "options": [
+      {
+        "label": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "12",
+        "isCorrect": true
+      },
+      {
+        "label": "14",
+        "isCorrect": false
+      },
+      {
+        "label": "10",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-002"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "time_hours",
+    "prompt": "It is 5 o'clock. What time will it be in 2 hours?",
+    "options": [
+      {
+        "label": "7",
+        "isCorrect": true
+      },
+      {
+        "label": "9",
+        "isCorrect": false
+      },
+      {
+        "label": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "5",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-003"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "measurement",
+    "prompt": "How many months are in 1 year?",
+    "options": [
+      {
+        "label": "22",
+        "isCorrect": false
+      },
+      {
+        "label": "10",
+        "isCorrect": false
+      },
+      {
+        "label": "12",
+        "isCorrect": true
+      },
+      {
+        "label": "11",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-004"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "addition_within_100",
+    "prompt": "What is 26 + 67?",
+    "options": [
+      {
+        "label": "93",
+        "isCorrect": true
+      },
+      {
+        "label": "103",
+        "isCorrect": false
+      },
+      {
+        "label": "94",
+        "isCorrect": false
+      },
+      {
+        "label": "83",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-005"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "subtraction_within_100",
+    "prompt": "What is 91 - 72?",
+    "options": [
+      {
+        "label": "29",
+        "isCorrect": false
+      },
+      {
+        "label": "20",
+        "isCorrect": false
+      },
+      {
+        "label": "9",
+        "isCorrect": false
+      },
+      {
+        "label": "19",
+        "isCorrect": true
+      }
+    ],
+    "id": "t4-door-006"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "What is 8 x 10?",
+    "options": [
+      {
+        "label": "70",
+        "isCorrect": false
+      },
+      {
+        "label": "18",
+        "isCorrect": false
+      },
+      {
+        "label": "90",
+        "isCorrect": false
+      },
+      {
+        "label": "80",
+        "isCorrect": true
+      }
+    ],
+    "id": "t4-door-007"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "time_hours",
+    "prompt": "It is 8 o'clock. What time will it be in 2 hours?",
+    "options": [
+      {
+        "label": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "10",
+        "isCorrect": true
+      },
+      {
+        "label": "11",
+        "isCorrect": false
+      },
+      {
+        "label": "12",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-008"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "measurement",
+    "prompt": "How many days are in 1 week?",
+    "options": [
+      {
+        "label": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "9",
+        "isCorrect": false
+      },
+      {
+        "label": "17",
+        "isCorrect": false
+      },
+      {
+        "label": "7",
+        "isCorrect": true
+      }
+    ],
+    "id": "t4-door-009"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "addition_within_100",
+    "prompt": "What is 42 + 25?",
+    "options": [
+      {
+        "label": "67",
+        "isCorrect": true
+      },
+      {
+        "label": "57",
+        "isCorrect": false
+      },
+      {
+        "label": "77",
+        "isCorrect": false
+      },
+      {
+        "label": "68",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-010"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "subtraction_within_100",
+    "prompt": "What is 51 - 8?",
+    "options": [
+      {
+        "label": "33",
+        "isCorrect": false
+      },
+      {
+        "label": "53",
+        "isCorrect": false
+      },
+      {
+        "label": "44",
+        "isCorrect": false
+      },
+      {
+        "label": "43",
+        "isCorrect": true
+      }
+    ],
+    "id": "t4-door-011"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "What is 5 x 5?",
+    "options": [
+      {
+        "label": "10",
+        "isCorrect": false
+      },
+      {
+        "label": "30",
+        "isCorrect": false
+      },
+      {
+        "label": "25",
+        "isCorrect": true
+      },
+      {
+        "label": "20",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-012"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "time_hours",
+    "prompt": "It is 6 o'clock. What time will it be in 2 hours?",
+    "options": [
+      {
+        "label": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "8",
+        "isCorrect": true
+      },
+      {
+        "label": "9",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-013"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "measurement",
+    "prompt": "How many seconds are in 1 minute?",
+    "options": [
+      {
+        "label": "61",
+        "isCorrect": false
+      },
+      {
+        "label": "60",
+        "isCorrect": true
+      },
+      {
+        "label": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "70",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-014"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "addition_within_100",
+    "prompt": "What is 28 + 43?",
+    "options": [
+      {
+        "label": "72",
+        "isCorrect": false
+      },
+      {
+        "label": "71",
+        "isCorrect": true
+      },
+      {
+        "label": "61",
+        "isCorrect": false
+      },
+      {
+        "label": "81",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-015"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "subtraction_within_100",
+    "prompt": "What is 44 - 25?",
+    "options": [
+      {
+        "label": "20",
+        "isCorrect": false
+      },
+      {
+        "label": "19",
+        "isCorrect": true
+      },
+      {
+        "label": "9",
+        "isCorrect": false
+      },
+      {
+        "label": "29",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-016"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "What is 6 x 10?",
+    "options": [
+      {
+        "label": "60",
+        "isCorrect": true
+      },
+      {
+        "label": "50",
+        "isCorrect": false
+      },
+      {
+        "label": "16",
+        "isCorrect": false
+      },
+      {
+        "label": "70",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-017"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "time_hours",
+    "prompt": "It is 4 o'clock. What time will it be in 1 hour?",
+    "options": [
+      {
+        "label": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "5",
+        "isCorrect": true
+      },
+      {
+        "label": "4",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-018"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "measurement",
+    "prompt": "How many centimeters are in 1 meter?",
+    "options": [
+      {
+        "label": "100",
+        "isCorrect": true
+      },
+      {
+        "label": "99",
+        "isCorrect": false
+      },
+      {
+        "label": "110",
+        "isCorrect": false
+      },
+      {
+        "label": "10",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-019"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "addition_within_100",
+    "prompt": "What is 58 + 12?",
+    "options": [
+      {
+        "label": "70",
+        "isCorrect": true
+      },
+      {
+        "label": "80",
+        "isCorrect": false
+      },
+      {
+        "label": "60",
+        "isCorrect": false
+      },
+      {
+        "label": "71",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-020"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "subtraction_within_100",
+    "prompt": "What is 56 - 7?",
+    "options": [
+      {
+        "label": "39",
+        "isCorrect": false
+      },
+      {
+        "label": "50",
+        "isCorrect": false
+      },
+      {
+        "label": "49",
+        "isCorrect": true
+      },
+      {
+        "label": "59",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-021"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "What is 4 x 5?",
+    "options": [
+      {
+        "label": "9",
+        "isCorrect": false
+      },
+      {
+        "label": "15",
+        "isCorrect": false
+      },
+      {
+        "label": "20",
+        "isCorrect": true
+      },
+      {
+        "label": "25",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-022"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "time_hours",
+    "prompt": "It is 9 o'clock. What time will it be in 2 hours?",
+    "options": [
+      {
+        "label": "9",
+        "isCorrect": false
+      },
+      {
+        "label": "10",
+        "isCorrect": false
+      },
+      {
+        "label": "12",
+        "isCorrect": false
+      },
+      {
+        "label": "11",
+        "isCorrect": true
+      }
+    ],
+    "id": "t4-door-023"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "measurement",
+    "prompt": "How many hours are in 1 day?",
+    "options": [
+      {
+        "label": "34",
+        "isCorrect": false
+      },
+      {
+        "label": "23",
+        "isCorrect": false
+      },
+      {
+        "label": "24",
+        "isCorrect": true
+      },
+      {
+        "label": "25",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-024"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "addition_within_100",
+    "prompt": "What is 28 + 65?",
+    "options": [
+      {
+        "label": "93",
+        "isCorrect": true
+      },
+      {
+        "label": "83",
+        "isCorrect": false
+      },
+      {
+        "label": "94",
+        "isCorrect": false
+      },
+      {
+        "label": "103",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-025"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "subtraction_within_100",
+    "prompt": "What is 75 - 68?",
+    "options": [
+      {
+        "label": "7",
+        "isCorrect": true
+      },
+      {
+        "label": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "17",
+        "isCorrect": false
+      },
+      {
+        "label": "6",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-026"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "time_hours",
+    "prompt": "It is 2 o'clock. What time will it be in 1 hour?",
+    "options": [
+      {
+        "label": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "3",
+        "isCorrect": true
+      },
+      {
+        "label": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "4",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-027"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "addition_within_100",
+    "prompt": "What is 41 + 39?",
+    "options": [
+      {
+        "label": "81",
+        "isCorrect": false
+      },
+      {
+        "label": "70",
+        "isCorrect": false
+      },
+      {
+        "label": "80",
+        "isCorrect": true
+      },
+      {
+        "label": "90",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-028"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "subtraction_within_100",
+    "prompt": "What is 57 - 44?",
+    "options": [
+      {
+        "label": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "23",
+        "isCorrect": false
+      },
+      {
+        "label": "14",
+        "isCorrect": false
+      },
+      {
+        "label": "13",
+        "isCorrect": true
+      }
+    ],
+    "id": "t4-door-029"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "What is 2 x 2?",
+    "options": [
+      {
+        "label": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "4",
+        "isCorrect": true
+      },
+      {
+        "label": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "6",
+        "isCorrect": false
+      }
+    ],
+    "id": "t4-door-030"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "Put the multiples of 2 in order.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "2",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "4",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "8",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "6",
+        "correctPosition": 2
+      }
+    ],
+    "id": "t4-drag-001"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "measurement",
+    "prompt": "Order these lengths from shortest to longest.",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "50 cm",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "1 m",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-1",
+        "label": "10 cm",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-0",
+        "label": "1 cm",
+        "correctPosition": 0
+      }
+    ],
+    "id": "t4-drag-002"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "number_ordering",
+    "prompt": "Drag the numbers into order, smallest first.",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "92",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "77",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "93",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "18",
+        "correctPosition": 0
+      }
+    ],
+    "id": "t4-drag-003"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "Put the multiples of 2 in order.",
+    "draggableItems": [
+      {
+        "id": "item-3",
+        "label": "14",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-1",
+        "label": "10",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "12",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "8",
+        "correctPosition": 0
+      }
+    ],
+    "id": "t4-drag-004"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "measurement",
+    "prompt": "Order these lengths from shortest to longest.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "1 cm",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "10 cm",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "2 m",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "1 m",
+        "correctPosition": 2
+      }
+    ],
+    "id": "t4-drag-005"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "number_ordering",
+    "prompt": "Drag the numbers into order, smallest first.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "13",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-2",
+        "label": "33",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "16",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "61",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t4-drag-006"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "Put the multiples of 5 in order.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "5",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "20",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "15",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "10",
+        "correctPosition": 1
+      }
+    ],
+    "id": "t4-drag-007"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "measurement",
+    "prompt": "Order these lengths from shortest to longest.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "1 cm",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "10 cm",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "50 cm",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "2 m",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t4-drag-008"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "number_ordering",
+    "prompt": "Drag the numbers into order, smallest first.",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "13",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "54",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "8",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "98",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t4-drag-009"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "Put the multiples of 10 in order.",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "40",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "50",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "30",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "60",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t4-drag-010"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "number_ordering",
+    "prompt": "Drag the numbers into order, smallest first.",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "33",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "15",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "56",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-1",
+        "label": "16",
+        "correctPosition": 1
+      }
+    ],
+    "id": "t4-drag-011"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "Put the multiples of 5 in order.",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "25",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "20",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "30",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "15",
+        "correctPosition": 0
+      }
+    ],
+    "id": "t4-drag-012"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "number_ordering",
+    "prompt": "Drag the numbers into order, smallest first.",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "29",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "60",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "5",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "76",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t4-drag-013"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "number_ordering",
+    "prompt": "Drag the numbers into order, smallest first.",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "23",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-0",
+        "label": "14",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "65",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "41",
+        "correctPosition": 2
+      }
+    ],
+    "id": "t4-drag-014"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "Put the multiples of 10 in order.",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "20",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-0",
+        "label": "10",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-2",
+        "label": "30",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "40",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t4-drag-015"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "addition_within_100",
+    "prompt": "The pattern adds 5 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "14",
+        "isBlank": false
+      },
+      {
+        "value": "19",
+        "isBlank": false
+      },
+      {
+        "value": "24",
+        "isBlank": false
+      },
+      {
+        "value": "29",
+        "isBlank": false
+      },
+      {
+        "value": "34",
+        "isBlank": false
+      },
+      {
+        "value": "39",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "25",
+      "15",
+      "39",
+      "20"
+    ],
+    "correctFills": [
+      "39"
+    ],
+    "id": "t4-pattern-001"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "subtraction_within_100",
+    "prompt": "The pattern subtracts 5 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "72",
+        "isBlank": false
+      },
+      {
+        "value": "67",
+        "isBlank": false
+      },
+      {
+        "value": "62",
+        "isBlank": true
+      },
+      {
+        "value": "57",
+        "isBlank": false
+      },
+      {
+        "value": "52",
+        "isBlank": false
+      },
+      {
+        "value": "47",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "71",
+      "61",
+      "62",
+      "66"
+    ],
+    "correctFills": [
+      "62"
+    ],
+    "id": "t4-pattern-002"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "Fill in the missing multiples of 10.",
+    "sequence": [
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "20",
+        "isBlank": true
+      },
+      {
+        "value": "30",
+        "isBlank": false
+      },
+      {
+        "value": "40",
+        "isBlank": false
+      },
+      {
+        "value": "50",
+        "isBlank": false
+      },
+      {
+        "value": "60",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "90",
+      "20",
+      "80",
+      "70"
+    ],
+    "correctFills": [
+      "20"
+    ],
+    "id": "t4-pattern-003"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "addition_within_100",
+    "prompt": "The pattern adds 6 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "22",
+        "isBlank": false
+      },
+      {
+        "value": "28",
+        "isBlank": false
+      },
+      {
+        "value": "34",
+        "isBlank": false
+      },
+      {
+        "value": "40",
+        "isBlank": false
+      },
+      {
+        "value": "46",
+        "isBlank": true
+      },
+      {
+        "value": "52",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "29",
+      "35",
+      "46",
+      "23"
+    ],
+    "correctFills": [
+      "46"
+    ],
+    "id": "t4-pattern-004"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "subtraction_within_100",
+    "prompt": "The pattern subtracts 6 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "75",
+        "isBlank": false
+      },
+      {
+        "value": "69",
+        "isBlank": false
+      },
+      {
+        "value": "63",
+        "isBlank": false
+      },
+      {
+        "value": "57",
+        "isBlank": false
+      },
+      {
+        "value": "51",
+        "isBlank": true
+      },
+      {
+        "value": "45",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "62",
+      "51",
+      "68",
+      "74"
+    ],
+    "correctFills": [
+      "51"
+    ],
+    "id": "t4-pattern-005"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "Fill in the missing multiples of 2.",
+    "sequence": [
+      {
+        "value": "2",
+        "isBlank": false
+      },
+      {
+        "value": "4",
+        "isBlank": true
+      },
+      {
+        "value": "6",
+        "isBlank": true
+      },
+      {
+        "value": "8",
+        "isBlank": false
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "12",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "18",
+      "16",
+      "14",
+      "6",
+      "4"
+    ],
+    "correctFills": [
+      "4",
+      "6"
+    ],
+    "id": "t4-pattern-006"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "addition_within_100",
+    "prompt": "The pattern adds 8 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "27",
+        "isBlank": false
+      },
+      {
+        "value": "35",
+        "isBlank": false
+      },
+      {
+        "value": "43",
+        "isBlank": false
+      },
+      {
+        "value": "51",
+        "isBlank": false
+      },
+      {
+        "value": "59",
+        "isBlank": true
+      },
+      {
+        "value": "67",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "44",
+      "36",
+      "28",
+      "59",
+      "67"
+    ],
+    "correctFills": [
+      "59",
+      "67"
+    ],
+    "id": "t4-pattern-007"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "subtraction_within_100",
+    "prompt": "The pattern subtracts 7 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "61",
+        "isBlank": false
+      },
+      {
+        "value": "54",
+        "isBlank": true
+      },
+      {
+        "value": "47",
+        "isBlank": false
+      },
+      {
+        "value": "40",
+        "isBlank": false
+      },
+      {
+        "value": "33",
+        "isBlank": false
+      },
+      {
+        "value": "26",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "60",
+      "46",
+      "53",
+      "54"
+    ],
+    "correctFills": [
+      "54"
+    ],
+    "id": "t4-pattern-008"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "Fill in the missing multiples of 5.",
+    "sequence": [
+      {
+        "value": "5",
+        "isBlank": false
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "15",
+        "isBlank": false
+      },
+      {
+        "value": "20",
+        "isBlank": true
+      },
+      {
+        "value": "25",
+        "isBlank": false
+      },
+      {
+        "value": "30",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "35",
+      "20",
+      "40",
+      "45"
+    ],
+    "correctFills": [
+      "20"
+    ],
+    "id": "t4-pattern-009"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "addition_within_100",
+    "prompt": "The pattern adds 5 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "34",
+        "isBlank": false
+      },
+      {
+        "value": "39",
+        "isBlank": false
+      },
+      {
+        "value": "44",
+        "isBlank": true
+      },
+      {
+        "value": "49",
+        "isBlank": false
+      },
+      {
+        "value": "54",
+        "isBlank": true
+      },
+      {
+        "value": "59",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "45",
+      "44",
+      "35",
+      "54",
+      "40"
+    ],
+    "correctFills": [
+      "44",
+      "54"
+    ],
+    "id": "t4-pattern-010"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "subtraction_within_100",
+    "prompt": "The pattern subtracts 3 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "61",
+        "isBlank": false
+      },
+      {
+        "value": "58",
+        "isBlank": false
+      },
+      {
+        "value": "55",
+        "isBlank": false
+      },
+      {
+        "value": "52",
+        "isBlank": true
+      },
+      {
+        "value": "49",
+        "isBlank": false
+      },
+      {
+        "value": "46",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "60",
+      "52",
+      "57",
+      "54"
+    ],
+    "correctFills": [
+      "52"
+    ],
+    "id": "t4-pattern-011"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "Fill in the missing multiples of 2.",
+    "sequence": [
+      {
+        "value": "2",
+        "isBlank": false
+      },
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "6",
+        "isBlank": false
+      },
+      {
+        "value": "8",
+        "isBlank": false
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "12",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "18",
+      "12",
+      "16",
+      "14"
+    ],
+    "correctFills": [
+      "12"
+    ],
+    "id": "t4-pattern-012"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "addition_within_100",
+    "prompt": "The pattern adds 4 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "13",
+        "isBlank": false
+      },
+      {
+        "value": "17",
+        "isBlank": false
+      },
+      {
+        "value": "21",
+        "isBlank": true
+      },
+      {
+        "value": "25",
+        "isBlank": false
+      },
+      {
+        "value": "29",
+        "isBlank": false
+      },
+      {
+        "value": "33",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "22",
+      "14",
+      "21",
+      "18",
+      "33"
+    ],
+    "correctFills": [
+      "21",
+      "33"
+    ],
+    "id": "t4-pattern-013"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "subtraction_within_100",
+    "prompt": "The pattern subtracts 5 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "89",
+        "isBlank": false
+      },
+      {
+        "value": "84",
+        "isBlank": false
+      },
+      {
+        "value": "79",
+        "isBlank": false
+      },
+      {
+        "value": "74",
+        "isBlank": false
+      },
+      {
+        "value": "69",
+        "isBlank": true
+      },
+      {
+        "value": "64",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "83",
+      "88",
+      "69",
+      "78"
+    ],
+    "correctFills": [
+      "69"
+    ],
+    "id": "t4-pattern-014"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 4,
+    "mathTopic": "multiplication_intro",
+    "prompt": "Fill in the missing multiples of 2.",
+    "sequence": [
+      {
+        "value": "2",
+        "isBlank": false
+      },
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "6",
+        "isBlank": false
+      },
+      {
+        "value": "8",
+        "isBlank": false
+      },
+      {
+        "value": "10",
+        "isBlank": true
+      },
+      {
+        "value": "12",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "14",
+      "18",
+      "12",
+      "16",
+      "10"
+    ],
+    "correctFills": [
+      "10",
+      "12"
+    ],
+    "id": "t4-pattern-015"
+  }
+]

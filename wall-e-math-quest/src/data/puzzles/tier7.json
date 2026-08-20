@@ -1,0 +1,1766 @@
+[
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Write 23/5 as a mixed number.",
+    "options": [
+      {
+        "label": "4 3/5",
+        "isCorrect": true
+      },
+      {
+        "label": "3 4/5",
+        "isCorrect": false
+      },
+      {
+        "label": "5 3/5",
+        "isCorrect": false
+      },
+      {
+        "label": "4 5/3",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-001"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "What is 3.5 + 7.1?",
+    "options": [
+      {
+        "label": "10.6",
+        "isCorrect": true
+      },
+      {
+        "label": "9.6",
+        "isCorrect": false
+      },
+      {
+        "label": "11.6",
+        "isCorrect": false
+      },
+      {
+        "label": "11.0",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-002"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "order_of_operations",
+    "prompt": "What is 4 + 9 x 3?",
+    "options": [
+      {
+        "label": "34",
+        "isCorrect": false
+      },
+      {
+        "label": "28",
+        "isCorrect": false
+      },
+      {
+        "label": "39",
+        "isCorrect": false
+      },
+      {
+        "label": "31",
+        "isCorrect": true
+      }
+    ],
+    "id": "t7-door-003"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "coordinates",
+    "prompt": "Wall-E is at (8, 3). How far up from (0, 0) is that?",
+    "options": [
+      {
+        "label": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "3",
+        "isCorrect": true
+      },
+      {
+        "label": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "2",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-004"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "division_with_remainders",
+    "prompt": "What is 47 / 6?",
+    "options": [
+      {
+        "label": "7 r5",
+        "isCorrect": true
+      },
+      {
+        "label": "7 r1",
+        "isCorrect": false
+      },
+      {
+        "label": "6 r5",
+        "isCorrect": false
+      },
+      {
+        "label": "8 r5",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-005"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Write 11/6 as a mixed number.",
+    "options": [
+      {
+        "label": "2 5/6",
+        "isCorrect": false
+      },
+      {
+        "label": "5 1/6",
+        "isCorrect": false
+      },
+      {
+        "label": "1 5/6",
+        "isCorrect": true
+      },
+      {
+        "label": "1 6/5",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-006"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "What is 1.9 + 2.7?",
+    "options": [
+      {
+        "label": "5.0",
+        "isCorrect": false
+      },
+      {
+        "label": "3.6",
+        "isCorrect": false
+      },
+      {
+        "label": "4.6",
+        "isCorrect": true
+      },
+      {
+        "label": "5.6",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-007"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "order_of_operations",
+    "prompt": "What is 3 x 6 - 9?",
+    "options": [
+      {
+        "label": "-9",
+        "isCorrect": false
+      },
+      {
+        "label": "9",
+        "isCorrect": true
+      },
+      {
+        "label": "0",
+        "isCorrect": false
+      },
+      {
+        "label": "18",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-008"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "coordinates",
+    "prompt": "Wall-E is at (4, 7). How far up from (0, 0) is that?",
+    "options": [
+      {
+        "label": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "7",
+        "isCorrect": true
+      },
+      {
+        "label": "4",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-009"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "division_with_remainders",
+    "prompt": "What is 21 / 4?",
+    "options": [
+      {
+        "label": "4 r1",
+        "isCorrect": false
+      },
+      {
+        "label": "6 r1",
+        "isCorrect": false
+      },
+      {
+        "label": "5 r1",
+        "isCorrect": true
+      },
+      {
+        "label": "5 r2",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-010"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Write 11/2 as a mixed number.",
+    "options": [
+      {
+        "label": "1 5/2",
+        "isCorrect": false
+      },
+      {
+        "label": "5 1/2",
+        "isCorrect": true
+      },
+      {
+        "label": "5 2/1",
+        "isCorrect": false
+      },
+      {
+        "label": "6 1/2",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-011"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "What is 1.8 + 6.3?",
+    "options": [
+      {
+        "label": "7.1",
+        "isCorrect": false
+      },
+      {
+        "label": "8.1",
+        "isCorrect": true
+      },
+      {
+        "label": "8.0",
+        "isCorrect": false
+      },
+      {
+        "label": "9.1",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-012"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "order_of_operations",
+    "prompt": "What is (3 + 2) x 4?",
+    "options": [
+      {
+        "label": "24",
+        "isCorrect": false
+      },
+      {
+        "label": "11",
+        "isCorrect": false
+      },
+      {
+        "label": "20",
+        "isCorrect": true
+      },
+      {
+        "label": "16",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-013"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "coordinates",
+    "prompt": "Wall-E is at (9, 9). How far up from (0, 0) is that?",
+    "options": [
+      {
+        "label": "9",
+        "isCorrect": true
+      },
+      {
+        "label": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "11",
+        "isCorrect": false
+      },
+      {
+        "label": "10",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-014"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "division_with_remainders",
+    "prompt": "What is 38 / 5?",
+    "options": [
+      {
+        "label": "6 r3",
+        "isCorrect": false
+      },
+      {
+        "label": "7 r4",
+        "isCorrect": false
+      },
+      {
+        "label": "7 r3",
+        "isCorrect": true
+      },
+      {
+        "label": "8 r3",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-015"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Write 10/3 as a mixed number.",
+    "options": [
+      {
+        "label": "3 3/1",
+        "isCorrect": false
+      },
+      {
+        "label": "4 1/3",
+        "isCorrect": false
+      },
+      {
+        "label": "3 1/3",
+        "isCorrect": true
+      },
+      {
+        "label": "1 3/3",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-016"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "What is 6.0 + 2.9?",
+    "options": [
+      {
+        "label": "9.0",
+        "isCorrect": false
+      },
+      {
+        "label": "9.9",
+        "isCorrect": false
+      },
+      {
+        "label": "8.9",
+        "isCorrect": true
+      },
+      {
+        "label": "7.9",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-017"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "order_of_operations",
+    "prompt": "What is 3 x 7 - 9?",
+    "options": [
+      {
+        "label": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "-6",
+        "isCorrect": false
+      },
+      {
+        "label": "21",
+        "isCorrect": false
+      },
+      {
+        "label": "12",
+        "isCorrect": true
+      }
+    ],
+    "id": "t7-door-018"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "coordinates",
+    "prompt": "Wall-E is at (2, 7). How far up from (0, 0) is that?",
+    "options": [
+      {
+        "label": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "7",
+        "isCorrect": true
+      },
+      {
+        "label": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "8",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-019"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "division_with_remainders",
+    "prompt": "What is 89 / 7?",
+    "options": [
+      {
+        "label": "13 r5",
+        "isCorrect": false
+      },
+      {
+        "label": "12 r6",
+        "isCorrect": false
+      },
+      {
+        "label": "12 r5",
+        "isCorrect": true
+      },
+      {
+        "label": "11 r5",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-020"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Write 21/5 as a mixed number.",
+    "options": [
+      {
+        "label": "4 5/1",
+        "isCorrect": false
+      },
+      {
+        "label": "4 1/5",
+        "isCorrect": true
+      },
+      {
+        "label": "1 4/5",
+        "isCorrect": false
+      },
+      {
+        "label": "5 1/5",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-021"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "What is 1.7 + 9.3?",
+    "options": [
+      {
+        "label": "11.1",
+        "isCorrect": false
+      },
+      {
+        "label": "12.0",
+        "isCorrect": false
+      },
+      {
+        "label": "11.0",
+        "isCorrect": true
+      },
+      {
+        "label": "10.0",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-022"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "order_of_operations",
+    "prompt": "What is 3 x 2 - 7?",
+    "options": [
+      {
+        "label": "-1",
+        "isCorrect": true
+      },
+      {
+        "label": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "-8",
+        "isCorrect": false
+      },
+      {
+        "label": "-15",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-023"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "coordinates",
+    "prompt": "Wall-E is at (1, 1). How far up from (0, 0) is that?",
+    "options": [
+      {
+        "label": "-1",
+        "isCorrect": false
+      },
+      {
+        "label": "0",
+        "isCorrect": false
+      },
+      {
+        "label": "1",
+        "isCorrect": true
+      },
+      {
+        "label": "2",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-024"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "division_with_remainders",
+    "prompt": "What is 30 / 4?",
+    "options": [
+      {
+        "label": "7 r3",
+        "isCorrect": false
+      },
+      {
+        "label": "6 r2",
+        "isCorrect": false
+      },
+      {
+        "label": "7 r2",
+        "isCorrect": true
+      },
+      {
+        "label": "8 r2",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-025"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Write 15/4 as a mixed number.",
+    "options": [
+      {
+        "label": "4 3/4",
+        "isCorrect": false
+      },
+      {
+        "label": "3 3/4",
+        "isCorrect": true
+      },
+      {
+        "label": "3 4/3",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-026"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "What is 5.5 + 5.0?",
+    "options": [
+      {
+        "label": "10.5",
+        "isCorrect": true
+      },
+      {
+        "label": "11.0",
+        "isCorrect": false
+      },
+      {
+        "label": "11.5",
+        "isCorrect": false
+      },
+      {
+        "label": "9.5",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-027"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "order_of_operations",
+    "prompt": "What is (8 + 8) x 4?",
+    "options": [
+      {
+        "label": "68",
+        "isCorrect": false
+      },
+      {
+        "label": "60",
+        "isCorrect": false
+      },
+      {
+        "label": "64",
+        "isCorrect": true
+      },
+      {
+        "label": "40",
+        "isCorrect": false
+      }
+    ],
+    "id": "t7-door-028"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "division_with_remainders",
+    "prompt": "What is 57 / 5?",
+    "options": [
+      {
+        "label": "10 r2",
+        "isCorrect": false
+      },
+      {
+        "label": "11 r3",
+        "isCorrect": false
+      },
+      {
+        "label": "12 r2",
+        "isCorrect": false
+      },
+      {
+        "label": "11 r2",
+        "isCorrect": true
+      }
+    ],
+    "id": "t7-door-029"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Write 7/6 as a mixed number.",
+    "options": [
+      {
+        "label": "2 1/6",
+        "isCorrect": false
+      },
+      {
+        "label": "1 6/1",
+        "isCorrect": false
+      },
+      {
+        "label": "1 1/6",
+        "isCorrect": true
+      }
+    ],
+    "id": "t7-door-030"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Order the mixed numbers from smallest to largest.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "1 2/6",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-2",
+        "label": "2 1/6",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "2 5/6",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-1",
+        "label": "1 5/6",
+        "correctPosition": 1
+      }
+    ],
+    "id": "t7-drag-001"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "division_with_remainders",
+    "prompt": "Order by remainder when divided by 5, smallest remainder first.",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "33",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "17",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-0",
+        "label": "26",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "24",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t7-drag-002"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "Order the decimals from smallest to largest.",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "2.41",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "4.69",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "1.14",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "7.82",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t7-drag-003"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Order the mixed numbers from smallest to largest.",
+    "draggableItems": [
+      {
+        "id": "item-3",
+        "label": "3 2/5",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "2 4/5",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "1 2/5",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "2 3/5",
+        "correctPosition": 1
+      }
+    ],
+    "id": "t7-drag-004"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "division_with_remainders",
+    "prompt": "Order by remainder when divided by 5, smallest remainder first.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "36",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "44",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-1",
+        "label": "27",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "13",
+        "correctPosition": 2
+      }
+    ],
+    "id": "t7-drag-005"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "Order the decimals from smallest to largest.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "2.30",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "4.60",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "5.28",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "4.62",
+        "correctPosition": 2
+      }
+    ],
+    "id": "t7-drag-006"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Order the mixed numbers from smallest to largest.",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "2 1/3",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "4 2/3",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "3 2/3",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "1 2/3",
+        "correctPosition": 0
+      }
+    ],
+    "id": "t7-drag-007"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "division_with_remainders",
+    "prompt": "Order by remainder when divided by 6, smallest remainder first.",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "14",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "45",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "13",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "17",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t7-drag-008"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "Order the decimals from smallest to largest.",
+    "draggableItems": [
+      {
+        "id": "item-3",
+        "label": "7.15",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-1",
+        "label": "3.50",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-0",
+        "label": "3.40",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-2",
+        "label": "6.89",
+        "correctPosition": 2
+      }
+    ],
+    "id": "t7-drag-009"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Order the mixed numbers from smallest to largest.",
+    "draggableItems": [
+      {
+        "id": "item-3",
+        "label": "3 4/5",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "1 1/5",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "1 4/5",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "2 3/5",
+        "correctPosition": 2
+      }
+    ],
+    "id": "t7-drag-010"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "division_with_remainders",
+    "prompt": "Order by remainder when divided by 6, smallest remainder first.",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "34",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "53",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "55",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "38",
+        "correctPosition": 1
+      }
+    ],
+    "id": "t7-drag-011"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "Order the decimals from smallest to largest.",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "8.89",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "9.52",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-1",
+        "label": "8.56",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-0",
+        "label": "7.96",
+        "correctPosition": 0
+      }
+    ],
+    "id": "t7-drag-012"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Order the mixed numbers from smallest to largest.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "1 3/4",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "2 3/4",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "3 2/4",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "3 3/4",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t7-drag-013"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "division_with_remainders",
+    "prompt": "Order by remainder when divided by 7, smallest remainder first.",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "31",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-0",
+        "label": "29",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-2",
+        "label": "61",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "55",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t7-drag-014"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "Order the decimals from smallest to largest.",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "6.75",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "6.27",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-0",
+        "label": "2.44",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "8.68",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t7-drag-015"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Fill the blanks. Each step adds 1/3.",
+    "sequence": [
+      {
+        "value": "1",
+        "isBlank": false
+      },
+      {
+        "value": "1 1/3",
+        "isBlank": false
+      },
+      {
+        "value": "1 2/3",
+        "isBlank": false
+      },
+      {
+        "value": "2",
+        "isBlank": false
+      },
+      {
+        "value": "2 1/3",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "3",
+      "0 1/3",
+      "2 1/3",
+      "1 3/3"
+    ],
+    "correctFills": [
+      "2 1/3"
+    ],
+    "id": "t7-pattern-001"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "order_of_operations",
+    "prompt": "Each step adds 6. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "3",
+        "isBlank": false
+      },
+      {
+        "value": "9",
+        "isBlank": true
+      },
+      {
+        "value": "15",
+        "isBlank": false
+      },
+      {
+        "value": "21",
+        "isBlank": true
+      },
+      {
+        "value": "27",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "21",
+      "18",
+      "9",
+      "-3",
+      "39"
+    ],
+    "correctFills": [
+      "9",
+      "21"
+    ],
+    "id": "t7-pattern-002"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "The pattern adds 0.8 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "1.4",
+        "isBlank": false
+      },
+      {
+        "value": "2.2",
+        "isBlank": false
+      },
+      {
+        "value": "3.0",
+        "isBlank": false
+      },
+      {
+        "value": "3.8",
+        "isBlank": true
+      },
+      {
+        "value": "4.6",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "4.6",
+      "7.0",
+      "7.8",
+      "3.8",
+      "6.2"
+    ],
+    "correctFills": [
+      "3.8",
+      "4.6"
+    ],
+    "id": "t7-pattern-003"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Fill the blanks. Each step adds 1/4.",
+    "sequence": [
+      {
+        "value": "1",
+        "isBlank": false
+      },
+      {
+        "value": "1 1/4",
+        "isBlank": true
+      },
+      {
+        "value": "1 2/4",
+        "isBlank": false
+      },
+      {
+        "value": "1 3/4",
+        "isBlank": false
+      },
+      {
+        "value": "2",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "1 4/4",
+      "3",
+      "0 1/4",
+      "1 1/4"
+    ],
+    "correctFills": [
+      "1 1/4"
+    ],
+    "id": "t7-pattern-004"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "order_of_operations",
+    "prompt": "Each step adds 2. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "6",
+        "isBlank": false
+      },
+      {
+        "value": "8",
+        "isBlank": true
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "12",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "12",
+      "16",
+      "2",
+      "8"
+    ],
+    "correctFills": [
+      "8",
+      "12"
+    ],
+    "id": "t7-pattern-005"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "The pattern adds 0.3 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "2.0",
+        "isBlank": false
+      },
+      {
+        "value": "2.3",
+        "isBlank": false
+      },
+      {
+        "value": "2.6",
+        "isBlank": true
+      },
+      {
+        "value": "2.9",
+        "isBlank": true
+      },
+      {
+        "value": "3.2",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "3.8",
+      "2.6",
+      "4.4",
+      "4.1",
+      "2.9"
+    ],
+    "correctFills": [
+      "2.6",
+      "2.9"
+    ],
+    "id": "t7-pattern-006"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Fill the blanks. Each step adds 1/6.",
+    "sequence": [
+      {
+        "value": "1",
+        "isBlank": false
+      },
+      {
+        "value": "1 1/6",
+        "isBlank": false
+      },
+      {
+        "value": "1 2/6",
+        "isBlank": false
+      },
+      {
+        "value": "1 3/6",
+        "isBlank": false
+      },
+      {
+        "value": "1 4/6",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "1 4/6",
+      "0 1/6",
+      "3",
+      "1 6/6"
+    ],
+    "correctFills": [
+      "1 4/6"
+    ],
+    "id": "t7-pattern-007"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "order_of_operations",
+    "prompt": "Each step adds 6. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "3",
+        "isBlank": false
+      },
+      {
+        "value": "9",
+        "isBlank": true
+      },
+      {
+        "value": "15",
+        "isBlank": false
+      },
+      {
+        "value": "21",
+        "isBlank": false
+      },
+      {
+        "value": "27",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "-3",
+      "9",
+      "27",
+      "18",
+      "39"
+    ],
+    "correctFills": [
+      "9",
+      "27"
+    ],
+    "id": "t7-pattern-008"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "The pattern adds 0.4 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "2.3",
+        "isBlank": false
+      },
+      {
+        "value": "2.7",
+        "isBlank": false
+      },
+      {
+        "value": "3.1",
+        "isBlank": false
+      },
+      {
+        "value": "3.5",
+        "isBlank": true
+      },
+      {
+        "value": "3.9",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "5.1",
+      "5.5",
+      "3.9",
+      "4.7",
+      "3.5"
+    ],
+    "correctFills": [
+      "3.5",
+      "3.9"
+    ],
+    "id": "t7-pattern-009"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Fill the blanks. Each step adds 1/6.",
+    "sequence": [
+      {
+        "value": "1",
+        "isBlank": false
+      },
+      {
+        "value": "1 1/6",
+        "isBlank": true
+      },
+      {
+        "value": "1 2/6",
+        "isBlank": false
+      },
+      {
+        "value": "1 3/6",
+        "isBlank": false
+      },
+      {
+        "value": "1 4/6",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "1 1/6",
+      "1 6/6",
+      "0 1/6",
+      "3"
+    ],
+    "correctFills": [
+      "1 1/6"
+    ],
+    "id": "t7-pattern-010"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "order_of_operations",
+    "prompt": "Each step adds 2. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "6",
+        "isBlank": false
+      },
+      {
+        "value": "8",
+        "isBlank": true
+      },
+      {
+        "value": "10",
+        "isBlank": true
+      },
+      {
+        "value": "12",
+        "isBlank": false
+      },
+      {
+        "value": "14",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "12",
+      "18",
+      "4",
+      "8",
+      "10"
+    ],
+    "correctFills": [
+      "8",
+      "10"
+    ],
+    "id": "t7-pattern-011"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "The pattern adds 0.2 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "1.4",
+        "isBlank": false
+      },
+      {
+        "value": "1.6",
+        "isBlank": false
+      },
+      {
+        "value": "1.8",
+        "isBlank": true
+      },
+      {
+        "value": "2.0",
+        "isBlank": false
+      },
+      {
+        "value": "2.2",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "1.8",
+      "2.8",
+      "2.6",
+      "3.0"
+    ],
+    "correctFills": [
+      "1.8"
+    ],
+    "id": "t7-pattern-012"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "mixed_numbers",
+    "prompt": "Fill the blanks. Each step adds 1/6.",
+    "sequence": [
+      {
+        "value": "1",
+        "isBlank": false
+      },
+      {
+        "value": "1 1/6",
+        "isBlank": false
+      },
+      {
+        "value": "1 2/6",
+        "isBlank": true
+      },
+      {
+        "value": "1 3/6",
+        "isBlank": false
+      },
+      {
+        "value": "1 4/6",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "1 6/6",
+      "3",
+      "1 2/6",
+      "0 1/6"
+    ],
+    "correctFills": [
+      "1 2/6"
+    ],
+    "id": "t7-pattern-013"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "order_of_operations",
+    "prompt": "Each step adds 5. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "6",
+        "isBlank": false
+      },
+      {
+        "value": "11",
+        "isBlank": true
+      },
+      {
+        "value": "16",
+        "isBlank": false
+      },
+      {
+        "value": "21",
+        "isBlank": true
+      },
+      {
+        "value": "26",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "11",
+      "1",
+      "36",
+      "21",
+      "30"
+    ],
+    "correctFills": [
+      "11",
+      "21"
+    ],
+    "id": "t7-pattern-014"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 7,
+    "mathTopic": "decimals_intro",
+    "prompt": "The pattern adds 0.6 each time. Fill the blanks.",
+    "sequence": [
+      {
+        "value": "0.4",
+        "isBlank": false
+      },
+      {
+        "value": "1.0",
+        "isBlank": false
+      },
+      {
+        "value": "1.6",
+        "isBlank": true
+      },
+      {
+        "value": "2.2",
+        "isBlank": false
+      },
+      {
+        "value": "2.8",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "5.2",
+      "4.6",
+      "1.6",
+      "2.8",
+      "4.0"
+    ],
+    "correctFills": [
+      "1.6",
+      "2.8"
+    ],
+    "id": "t7-pattern-015"
+  }
+]
