@@ -9,9 +9,9 @@ describe('wrong-answer character selection (PRD Section 7.2)', () => {
       const id = pickWrongAnswerCharacter(null, random);
       counts[id] = (counts[id] ?? 0) + 1;
     }
-    expect(counts.mo / 20_000).toBeCloseTo(0.4, 1);
-    expect(counts.auto / 20_000).toBeCloseTo(0.25, 1);
-    const rejects = (counts.vaqm + counts.dfib + counts.brla) / 20_000;
+    expect((counts['mo'] ?? 0) / 20_000).toBeCloseTo(0.4, 1);
+    expect((counts['auto'] ?? 0) / 20_000).toBeCloseTo(0.25, 1);
+    const rejects = ((counts['vaqm'] ?? 0) + (counts['dfib'] ?? 0) + (counts['brla'] ?? 0)) / 20_000;
     expect(rejects).toBeCloseTo(0.35, 1);
   });
 
