@@ -1,0 +1,1634 @@
+[
+  {
+    "id": "t2-door-001",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "How many? 🔩🔩🔩🔩🔩🔩🔩🔩🔩🔩🔩",
+    "options": [
+      {
+        "label": "12",
+        "isCorrect": false
+      },
+      {
+        "label": "10",
+        "isCorrect": false
+      },
+      {
+        "label": "11",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-002",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "How many? ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐",
+    "options": [
+      {
+        "label": "12",
+        "isCorrect": true
+      },
+      {
+        "label": "13",
+        "isCorrect": false
+      },
+      {
+        "label": "11",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-003",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "How many? 🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱",
+    "options": [
+      {
+        "label": "13",
+        "isCorrect": true
+      },
+      {
+        "label": "14",
+        "isCorrect": false
+      },
+      {
+        "label": "12",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-004",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "How many? 🔩🔩🔩🔩🔩🔩🔩🔩🔩🔩🔩🔩🔩🔩🔩",
+    "options": [
+      {
+        "label": "15",
+        "isCorrect": true
+      },
+      {
+        "label": "14",
+        "isCorrect": false
+      },
+      {
+        "label": "16",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-005",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "What comes after 16?",
+    "options": [
+      {
+        "label": "18",
+        "isCorrect": false
+      },
+      {
+        "label": "15",
+        "isCorrect": false
+      },
+      {
+        "label": "17",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-006",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "What comes before 20?",
+    "options": [
+      {
+        "label": "18",
+        "isCorrect": false
+      },
+      {
+        "label": "19",
+        "isCorrect": true
+      },
+      {
+        "label": "21",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-007",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "What comes after 13?",
+    "options": [
+      {
+        "label": "14",
+        "isCorrect": true
+      },
+      {
+        "label": "12",
+        "isCorrect": false
+      },
+      {
+        "label": "15",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-008",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "What comes before 11?",
+    "options": [
+      {
+        "label": "10",
+        "isCorrect": true
+      },
+      {
+        "label": "12",
+        "isCorrect": false
+      },
+      {
+        "label": "9",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-009",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "What is 1 + 1?",
+    "options": [
+      {
+        "label": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "2",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-010",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "What is 2 + 1?",
+    "options": [
+      {
+        "label": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "3",
+        "isCorrect": true
+      },
+      {
+        "label": "4",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-011",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "What is 2 + 2?",
+    "options": [
+      {
+        "label": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "4",
+        "isCorrect": true
+      },
+      {
+        "label": "3",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-012",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "What is 3 + 2?",
+    "options": [
+      {
+        "label": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "5",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-013",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "What is 3 + 3?",
+    "options": [
+      {
+        "label": "6",
+        "isCorrect": true
+      },
+      {
+        "label": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "7",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-014",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "What is 4 + 2?",
+    "options": [
+      {
+        "label": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "6",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-015",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "What is 4 + 3?",
+    "options": [
+      {
+        "label": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "7",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-016",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "What is 5 + 3?",
+    "options": [
+      {
+        "label": "9",
+        "isCorrect": false
+      },
+      {
+        "label": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "8",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-017",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "What is 5 + 4?",
+    "options": [
+      {
+        "label": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "9",
+        "isCorrect": true
+      },
+      {
+        "label": "10",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-018",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "What is 5 + 5?",
+    "options": [
+      {
+        "label": "10",
+        "isCorrect": true
+      },
+      {
+        "label": "11",
+        "isCorrect": false
+      },
+      {
+        "label": "9",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-019",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "shape_names",
+    "prompt": "Which one is a circle?",
+    "options": [
+      {
+        "label": "🔺",
+        "isCorrect": false
+      },
+      {
+        "label": "⬛",
+        "isCorrect": false
+      },
+      {
+        "label": "⭕",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-020",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "shape_names",
+    "prompt": "Which one is a square?",
+    "options": [
+      {
+        "label": "⬛",
+        "isCorrect": true
+      },
+      {
+        "label": "🔺",
+        "isCorrect": false
+      },
+      {
+        "label": "⭕",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-021",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "shape_names",
+    "prompt": "Which one is a triangle?",
+    "options": [
+      {
+        "label": "⬛",
+        "isCorrect": false
+      },
+      {
+        "label": "🔺",
+        "isCorrect": true
+      },
+      {
+        "label": "⭕",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-022",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "shape_names",
+    "prompt": "Which one is a diamond?",
+    "options": [
+      {
+        "label": "⬛",
+        "isCorrect": false
+      },
+      {
+        "label": "⭕",
+        "isCorrect": false
+      },
+      {
+        "label": "🔶",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-023",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "shape_names",
+    "prompt": "How many corners does a square have?",
+    "options": [
+      {
+        "label": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "4",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-024",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "shape_names",
+    "prompt": "How many corners does a triangle have?",
+    "options": [
+      {
+        "label": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "3",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-025",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "size_ordering",
+    "prompt": "Which is the BIGGEST number?",
+    "options": [
+      {
+        "label": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "9",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-026",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "size_ordering",
+    "prompt": "Which is the SMALLEST number?",
+    "options": [
+      {
+        "label": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "2",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-027",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "size_ordering",
+    "prompt": "Which is the BIGGEST number?",
+    "options": [
+      {
+        "label": "18",
+        "isCorrect": true
+      },
+      {
+        "label": "15",
+        "isCorrect": false
+      },
+      {
+        "label": "12",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-door-028",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "size_ordering",
+    "prompt": "Which is the SMALLEST number?",
+    "options": [
+      {
+        "label": "14",
+        "isCorrect": false
+      },
+      {
+        "label": "16",
+        "isCorrect": false
+      },
+      {
+        "label": "11",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-029",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "size_ordering",
+    "prompt": "Which pile is BIGGEST?",
+    "options": [
+      {
+        "label": "🔩🔩🔩🔩🔩🔩",
+        "isCorrect": false
+      },
+      {
+        "label": "🔩🔩🔩🔩",
+        "isCorrect": false
+      },
+      {
+        "label": "🔩🔩🔩🔩🔩🔩🔩🔩🔩",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "t2-door-030",
+    "type": "door_selection",
+    "tierId": 2,
+    "mathTopic": "size_ordering",
+    "prompt": "Which pile is SMALLEST?",
+    "options": [
+      {
+        "label": "⭐⭐",
+        "isCorrect": true
+      },
+      {
+        "label": "⭐⭐⭐⭐⭐",
+        "isCorrect": false
+      },
+      {
+        "label": "⭐⭐⭐⭐⭐⭐⭐⭐",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-001",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "Put the numbers in order.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "10",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "11",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "13",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "12",
+        "correctPosition": 2
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-002",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "Put the numbers in order.",
+    "draggableItems": [
+      {
+        "id": "item-3",
+        "label": "17",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "16",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "14",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "15",
+        "correctPosition": 1
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-003",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "Put the numbers in order.",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "19",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "20",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "17",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "18",
+        "correctPosition": 1
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-004",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "Put the numbers in order.",
+    "draggableItems": [
+      {
+        "id": "item-3",
+        "label": "17",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "15",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "13",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-0",
+        "label": "11",
+        "correctPosition": 0
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-005",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "Put the numbers in order.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "12",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "14",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "16",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "18",
+        "correctPosition": 3
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-006",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "Put the numbers in order.",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "15",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "20",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-1",
+        "label": "10",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-0",
+        "label": "5",
+        "correctPosition": 0
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-007",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "size_ordering",
+    "prompt": "Smallest to biggest!",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "3",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-2",
+        "label": "12",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "19",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-1",
+        "label": "8",
+        "correctPosition": 1
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-008",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "size_ordering",
+    "prompt": "Smallest to biggest!",
+    "draggableItems": [
+      {
+        "id": "item-3",
+        "label": "16",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "2",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-2",
+        "label": "11",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "6",
+        "correctPosition": 1
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-009",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "size_ordering",
+    "prompt": "Biggest to smallest!",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "15",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "9",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "4",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "20",
+        "correctPosition": 0
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-010",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "size_ordering",
+    "prompt": "Biggest to smallest!",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "7",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "18",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "13",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "1",
+        "correctPosition": 3
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-011",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "size_ordering",
+    "prompt": "Smallest to biggest!",
+    "draggableItems": [
+      {
+        "id": "item-3",
+        "label": "🔩🔩🔩🔩🔩🔩🔩🔩",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "🔩🔩",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-2",
+        "label": "🔩🔩🔩🔩🔩🔩",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "🔩🔩🔩🔩",
+        "correctPosition": 1
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-012",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "Smallest answer first!",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "1 + 1",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "3 + 3",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "2 + 2",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "2 + 1",
+        "correctPosition": 1
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-013",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "Smallest answer first!",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "1 + 2",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "4 + 5",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "3 + 4",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "2 + 3",
+        "correctPosition": 1
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-014",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "Smallest answer first!",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "2 + 4",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "1 + 3",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-0",
+        "label": "0 + 2",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "3 + 5",
+        "correctPosition": 3
+      }
+    ]
+  },
+  {
+    "id": "t2-drag-015",
+    "type": "drag_and_drop",
+    "tierId": 2,
+    "mathTopic": "shape_names",
+    "prompt": "Fewest corners first!",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "circle",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-2",
+        "label": "square",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "triangle",
+        "correctPosition": 1
+      }
+    ]
+  },
+  {
+    "id": "t2-pattern-001",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "What is missing?",
+    "sequence": [
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "11",
+        "isBlank": false
+      },
+      {
+        "value": "12",
+        "isBlank": true
+      },
+      {
+        "value": "13",
+        "isBlank": false
+      },
+      {
+        "value": "14",
+        "isBlank": false
+      }
+    ],
+    "correctFills": [
+      "12"
+    ],
+    "fillOptions": [
+      "15",
+      "16",
+      "9",
+      "12"
+    ]
+  },
+  {
+    "id": "t2-pattern-002",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "What is missing?",
+    "sequence": [
+      {
+        "value": "12",
+        "isBlank": false
+      },
+      {
+        "value": "13",
+        "isBlank": false
+      },
+      {
+        "value": "14",
+        "isBlank": false
+      },
+      {
+        "value": "15",
+        "isBlank": true
+      },
+      {
+        "value": "16",
+        "isBlank": false
+      }
+    ],
+    "correctFills": [
+      "15"
+    ],
+    "fillOptions": [
+      "17",
+      "15",
+      "18",
+      "11"
+    ]
+  },
+  {
+    "id": "t2-pattern-003",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "What is missing?",
+    "sequence": [
+      {
+        "value": "15",
+        "isBlank": false
+      },
+      {
+        "value": "16",
+        "isBlank": true
+      },
+      {
+        "value": "17",
+        "isBlank": false
+      },
+      {
+        "value": "18",
+        "isBlank": false
+      },
+      {
+        "value": "19",
+        "isBlank": true
+      }
+    ],
+    "correctFills": [
+      "16",
+      "19"
+    ],
+    "fillOptions": [
+      "19",
+      "20",
+      "19",
+      "14",
+      "16"
+    ]
+  },
+  {
+    "id": "t2-pattern-004",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "What is missing?",
+    "sequence": [
+      {
+        "value": "16",
+        "isBlank": false
+      },
+      {
+        "value": "17",
+        "isBlank": false
+      },
+      {
+        "value": "18",
+        "isBlank": false
+      },
+      {
+        "value": "19",
+        "isBlank": false
+      },
+      {
+        "value": "20",
+        "isBlank": true
+      }
+    ],
+    "correctFills": [
+      "20"
+    ],
+    "fillOptions": [
+      "15",
+      "21",
+      "20",
+      "14"
+    ]
+  },
+  {
+    "id": "t2-pattern-005",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "What is missing?",
+    "sequence": [
+      {
+        "value": "11",
+        "isBlank": false
+      },
+      {
+        "value": "12",
+        "isBlank": true
+      },
+      {
+        "value": "13",
+        "isBlank": false
+      },
+      {
+        "value": "14",
+        "isBlank": false
+      },
+      {
+        "value": "15",
+        "isBlank": true
+      }
+    ],
+    "correctFills": [
+      "12",
+      "15"
+    ],
+    "fillOptions": [
+      "10",
+      "17",
+      "15",
+      "16",
+      "12"
+    ]
+  },
+  {
+    "id": "t2-pattern-006",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "Counting by 2s. What is missing?",
+    "sequence": [
+      {
+        "value": "2",
+        "isBlank": false
+      },
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "6",
+        "isBlank": true
+      },
+      {
+        "value": "8",
+        "isBlank": false
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      }
+    ],
+    "correctFills": [
+      "6"
+    ],
+    "fillOptions": [
+      "7",
+      "5",
+      "12",
+      "6"
+    ]
+  },
+  {
+    "id": "t2-pattern-007",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "Counting by 2s. What is missing?",
+    "sequence": [
+      {
+        "value": "6",
+        "isBlank": false
+      },
+      {
+        "value": "8",
+        "isBlank": false
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "12",
+        "isBlank": true
+      },
+      {
+        "value": "14",
+        "isBlank": false
+      }
+    ],
+    "correctFills": [
+      "12"
+    ],
+    "fillOptions": [
+      "13",
+      "12",
+      "16",
+      "11"
+    ]
+  },
+  {
+    "id": "t2-pattern-008",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "Counting by 2s. What is missing?",
+    "sequence": [
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "12",
+        "isBlank": false
+      },
+      {
+        "value": "14",
+        "isBlank": true
+      },
+      {
+        "value": "16",
+        "isBlank": false
+      },
+      {
+        "value": "18",
+        "isBlank": true
+      }
+    ],
+    "correctFills": [
+      "14",
+      "18"
+    ],
+    "fillOptions": [
+      "15",
+      "20",
+      "18",
+      "14",
+      "18"
+    ]
+  },
+  {
+    "id": "t2-pattern-009",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "counting_1_20",
+    "prompt": "Counting by 5s. What is missing?",
+    "sequence": [
+      {
+        "value": "5",
+        "isBlank": false
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "15",
+        "isBlank": true
+      },
+      {
+        "value": "20",
+        "isBlank": false
+      }
+    ],
+    "correctFills": [
+      "15"
+    ],
+    "fillOptions": [
+      "12",
+      "15",
+      "18",
+      "25"
+    ]
+  },
+  {
+    "id": "t2-pattern-010",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "Add 1 each time. What is missing?",
+    "sequence": [
+      {
+        "value": "1",
+        "isBlank": false
+      },
+      {
+        "value": "2",
+        "isBlank": false
+      },
+      {
+        "value": "3",
+        "isBlank": false
+      },
+      {
+        "value": "4",
+        "isBlank": true
+      },
+      {
+        "value": "5",
+        "isBlank": false
+      }
+    ],
+    "correctFills": [
+      "4"
+    ],
+    "fillOptions": [
+      "4",
+      "0",
+      "6",
+      "7"
+    ]
+  },
+  {
+    "id": "t2-pattern-011",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "Add 2 each time. What is missing?",
+    "sequence": [
+      {
+        "value": "1",
+        "isBlank": false
+      },
+      {
+        "value": "3",
+        "isBlank": false
+      },
+      {
+        "value": "5",
+        "isBlank": false
+      },
+      {
+        "value": "7",
+        "isBlank": true
+      },
+      {
+        "value": "9",
+        "isBlank": false
+      }
+    ],
+    "correctFills": [
+      "7"
+    ],
+    "fillOptions": [
+      "7",
+      "6",
+      "11",
+      "8"
+    ]
+  },
+  {
+    "id": "t2-pattern-012",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "addition_within_10",
+    "prompt": "Add 3 each time. What is missing?",
+    "sequence": [
+      {
+        "value": "1",
+        "isBlank": false
+      },
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "7",
+        "isBlank": true
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      }
+    ],
+    "correctFills": [
+      "7"
+    ],
+    "fillOptions": [
+      "8",
+      "6",
+      "13",
+      "7"
+    ]
+  },
+  {
+    "id": "t2-pattern-013",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "shape_names",
+    "prompt": "What comes next?",
+    "sequence": [
+      {
+        "value": "⭕",
+        "isBlank": false
+      },
+      {
+        "value": "🔺",
+        "isBlank": false
+      },
+      {
+        "value": "⬛",
+        "isBlank": false
+      },
+      {
+        "value": "⭕",
+        "isBlank": false
+      },
+      {
+        "value": "🔺",
+        "isBlank": false
+      },
+      {
+        "value": "⬛",
+        "isBlank": true
+      }
+    ],
+    "correctFills": [
+      "⬛"
+    ],
+    "fillOptions": [
+      "🔶",
+      "⬛",
+      "🔴",
+      "⭐"
+    ]
+  },
+  {
+    "id": "t2-pattern-014",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "shape_names",
+    "prompt": "What comes next?",
+    "sequence": [
+      {
+        "value": "⬛",
+        "isBlank": false
+      },
+      {
+        "value": "⭕",
+        "isBlank": false
+      },
+      {
+        "value": "⬛",
+        "isBlank": false
+      },
+      {
+        "value": "⭕",
+        "isBlank": false
+      },
+      {
+        "value": "⬛",
+        "isBlank": true
+      }
+    ],
+    "correctFills": [
+      "⬛"
+    ],
+    "fillOptions": [
+      "🔺",
+      "⭐",
+      "🔶",
+      "⬛"
+    ]
+  },
+  {
+    "id": "t2-pattern-015",
+    "type": "pattern_completion",
+    "tierId": 2,
+    "mathTopic": "shape_names",
+    "prompt": "What is missing?",
+    "sequence": [
+      {
+        "value": "🔶",
+        "isBlank": false
+      },
+      {
+        "value": "⭐",
+        "isBlank": false
+      },
+      {
+        "value": "🔶",
+        "isBlank": true
+      },
+      {
+        "value": "⭐",
+        "isBlank": false
+      },
+      {
+        "value": "🔶",
+        "isBlank": false
+      }
+    ],
+    "correctFills": [
+      "🔶"
+    ],
+    "fillOptions": [
+      "🔺",
+      "⭕",
+      "🔶",
+      "⬛"
+    ]
+  }
+]

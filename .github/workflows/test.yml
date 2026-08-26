@@ -20,3 +20,40 @@ jobs:
       - name: Run tests (AC-1..AC-8 + scoring)
         working-directory: prime-day-engine/backend
         run: python -m unittest discover -s tests -p "test_*.py" -v
+
+  wall-e-math-quest-content:
+    name: Wall-E Math Quest (puzzle content gate)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # No install needed: the content pipeline runs on Node built-ins.
+      - name: Verify committed puzzle JSON matches the generator
+        working-directory: wall-e-math-quest
+        run: npm run verify:content
+
+  wall-e-math-quest-tests:
+    name: Wall-E Math Quest (typecheck + jest)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        working-directory: wall-e-math-quest
+        run: npm install --no-audit --no-fund
+
+      - name: Typecheck
+        working-directory: wall-e-math-quest
+        run: npm run typecheck
+
+      - name: Test
+        working-directory: wall-e-math-quest
+        run: npm test -- --ci

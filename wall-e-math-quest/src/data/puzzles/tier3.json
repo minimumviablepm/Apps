@@ -1,0 +1,1709 @@
+[
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "subtraction_within_20",
+    "prompt": "What is 9 - 1?",
+    "options": [
+      {
+        "label": "9",
+        "isCorrect": false
+      },
+      {
+        "label": "8",
+        "isCorrect": true
+      },
+      {
+        "label": "7",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-001"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "place_value",
+    "prompt": "How many tens are in 90?",
+    "options": [
+      {
+        "label": "10",
+        "isCorrect": false
+      },
+      {
+        "label": "0",
+        "isCorrect": false
+      },
+      {
+        "label": "9",
+        "isCorrect": true
+      }
+    ],
+    "id": "t3-door-002"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "shape_properties",
+    "prompt": "How many sides does a octagon have?",
+    "options": [
+      {
+        "label": "9",
+        "isCorrect": false
+      },
+      {
+        "label": "8",
+        "isCorrect": true
+      },
+      {
+        "label": "6",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-003"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Skip count: 10, 20, 30, 40, ...  What comes next?",
+    "options": [
+      {
+        "label": "60",
+        "isCorrect": false
+      },
+      {
+        "label": "50",
+        "isCorrect": true
+      },
+      {
+        "label": "51",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-004"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "addition_within_20",
+    "prompt": "What is 3 + 16?",
+    "options": [
+      {
+        "label": "20",
+        "isCorrect": false
+      },
+      {
+        "label": "19",
+        "isCorrect": true
+      },
+      {
+        "label": "18",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-005"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "subtraction_within_20",
+    "prompt": "What is 16 - 13?",
+    "options": [
+      {
+        "label": "3",
+        "isCorrect": true
+      },
+      {
+        "label": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "2",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-006"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "place_value",
+    "prompt": "How many tens are in 47?",
+    "options": [
+      {
+        "label": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "4",
+        "isCorrect": true
+      }
+    ],
+    "id": "t3-door-007"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "shape_properties",
+    "prompt": "How many sides does a triangle have?",
+    "options": [
+      {
+        "label": "3",
+        "isCorrect": true
+      },
+      {
+        "label": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "1",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-008"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Skip count: 50, 60, 70, 80, ...  What comes next?",
+    "options": [
+      {
+        "label": "91",
+        "isCorrect": false
+      },
+      {
+        "label": "100",
+        "isCorrect": false
+      },
+      {
+        "label": "90",
+        "isCorrect": true
+      }
+    ],
+    "id": "t3-door-009"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "addition_within_20",
+    "prompt": "What is 8 + 9?",
+    "options": [
+      {
+        "label": "17",
+        "isCorrect": true
+      },
+      {
+        "label": "27",
+        "isCorrect": false
+      },
+      {
+        "label": "16",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-010"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "subtraction_within_20",
+    "prompt": "What is 12 - 6?",
+    "options": [
+      {
+        "label": "6",
+        "isCorrect": true
+      },
+      {
+        "label": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "18",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-011"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "place_value",
+    "prompt": "How many ones are in 13?",
+    "options": [
+      {
+        "label": "3",
+        "isCorrect": true
+      },
+      {
+        "label": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "1",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-012"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "shape_properties",
+    "prompt": "How many sides does a square have?",
+    "options": [
+      {
+        "label": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "4",
+        "isCorrect": true
+      },
+      {
+        "label": "5",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-013"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Skip count: 6, 8, 10, 12, ...  What comes next?",
+    "options": [
+      {
+        "label": "14",
+        "isCorrect": true
+      },
+      {
+        "label": "12",
+        "isCorrect": false
+      },
+      {
+        "label": "16",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-014"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "addition_within_20",
+    "prompt": "What is 15 + 4?",
+    "options": [
+      {
+        "label": "19",
+        "isCorrect": true
+      },
+      {
+        "label": "11",
+        "isCorrect": false
+      },
+      {
+        "label": "18",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-015"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "subtraction_within_20",
+    "prompt": "What is 17 - 15?",
+    "options": [
+      {
+        "label": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "2",
+        "isCorrect": true
+      },
+      {
+        "label": "3",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-016"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Skip count: 4, 6, 8, 10, ...  What comes next?",
+    "options": [
+      {
+        "label": "12",
+        "isCorrect": true
+      },
+      {
+        "label": "10",
+        "isCorrect": false
+      },
+      {
+        "label": "13",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-017"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "addition_within_20",
+    "prompt": "What is 10 + 10?",
+    "options": [
+      {
+        "label": "20",
+        "isCorrect": true
+      },
+      {
+        "label": "21",
+        "isCorrect": false
+      },
+      {
+        "label": "19",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-018"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "subtraction_within_20",
+    "prompt": "What is 13 - 4?",
+    "options": [
+      {
+        "label": "17",
+        "isCorrect": false
+      },
+      {
+        "label": "9",
+        "isCorrect": true
+      },
+      {
+        "label": "8",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-019"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "place_value",
+    "prompt": "How many ones are in 46?",
+    "options": [
+      {
+        "label": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "6",
+        "isCorrect": true
+      },
+      {
+        "label": "4",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-020"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Skip count: 5, 10, 15, 20, ...  What comes next?",
+    "options": [
+      {
+        "label": "20",
+        "isCorrect": false
+      },
+      {
+        "label": "26",
+        "isCorrect": false
+      },
+      {
+        "label": "25",
+        "isCorrect": true
+      }
+    ],
+    "id": "t3-door-021"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "addition_within_20",
+    "prompt": "What is 5 + 13?",
+    "options": [
+      {
+        "label": "19",
+        "isCorrect": false
+      },
+      {
+        "label": "17",
+        "isCorrect": false
+      },
+      {
+        "label": "18",
+        "isCorrect": true
+      }
+    ],
+    "id": "t3-door-022"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "subtraction_within_20",
+    "prompt": "What is 12 - 8?",
+    "options": [
+      {
+        "label": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "4",
+        "isCorrect": true
+      },
+      {
+        "label": "20",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-023"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "place_value",
+    "prompt": "How many tens are in 49?",
+    "options": [
+      {
+        "label": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "4",
+        "isCorrect": true
+      },
+      {
+        "label": "9",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-024"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Skip count: 20, 30, 40, 50, ...  What comes next?",
+    "options": [
+      {
+        "label": "60",
+        "isCorrect": true
+      },
+      {
+        "label": "61",
+        "isCorrect": false
+      },
+      {
+        "label": "70",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-025"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "addition_within_20",
+    "prompt": "What is 6 + 1?",
+    "options": [
+      {
+        "label": "7",
+        "isCorrect": true
+      },
+      {
+        "label": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "6",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-026"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "subtraction_within_20",
+    "prompt": "What is 12 - 11?",
+    "options": [
+      {
+        "label": "1",
+        "isCorrect": true
+      },
+      {
+        "label": "23",
+        "isCorrect": false
+      },
+      {
+        "label": "2",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-027"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "place_value",
+    "prompt": "How many ones are in 89?",
+    "options": [
+      {
+        "label": "9",
+        "isCorrect": true
+      },
+      {
+        "label": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "7",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-028"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "shape_properties",
+    "prompt": "How many sides does a hexagon have?",
+    "options": [
+      {
+        "label": "6",
+        "isCorrect": true
+      },
+      {
+        "label": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "8",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-029"
+  },
+  {
+    "type": "door_selection",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Skip count: 40, 50, 60, 70, ...  What comes next?",
+    "options": [
+      {
+        "label": "81",
+        "isCorrect": false
+      },
+      {
+        "label": "80",
+        "isCorrect": true
+      },
+      {
+        "label": "90",
+        "isCorrect": false
+      }
+    ],
+    "id": "t3-door-030"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Put the skip-count by 10s in order.",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "60",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "40",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "50",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "70",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t3-drag-001"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "shape_properties",
+    "prompt": "Order the shapes from fewest sides to most sides.",
+    "draggableItems": [
+      {
+        "id": "item-3",
+        "label": "octagon",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "pentagon",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "rectangle",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "square",
+        "correctPosition": 1
+      }
+    ],
+    "id": "t3-drag-002"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "number_ordering",
+    "prompt": "Drag the numbers into order, smallest first.",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "12",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "7",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-0",
+        "label": "2",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "13",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t3-drag-003"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Put the skip-count by 5s in order.",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "10",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "20",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "5",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-2",
+        "label": "15",
+        "correctPosition": 2
+      }
+    ],
+    "id": "t3-drag-004"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "shape_properties",
+    "prompt": "Order the shapes from fewest sides to most sides.",
+    "draggableItems": [
+      {
+        "id": "item-3",
+        "label": "octagon",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "hexagon",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-0",
+        "label": "square",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "pentagon",
+        "correctPosition": 1
+      }
+    ],
+    "id": "t3-drag-005"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "number_ordering",
+    "prompt": "Drag the numbers into order, smallest first.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "6",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-2",
+        "label": "11",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "10",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "12",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t3-drag-006"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "shape_properties",
+    "prompt": "Order the shapes from fewest sides to most sides.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "triangle",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-2",
+        "label": "square",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "rectangle",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "hexagon",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t3-drag-007"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "number_ordering",
+    "prompt": "Drag the numbers into order, smallest first.",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "12",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "18",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "2",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-2",
+        "label": "13",
+        "correctPosition": 2
+      }
+    ],
+    "id": "t3-drag-008"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Put the skip-count by 2s in order.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "2",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "4",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "6",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "8",
+        "correctPosition": 3
+      }
+    ],
+    "id": "t3-drag-009"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "shape_properties",
+    "prompt": "Order the shapes from fewest sides to most sides.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "triangle",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-3",
+        "label": "hexagon",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-1",
+        "label": "square",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "pentagon",
+        "correctPosition": 2
+      }
+    ],
+    "id": "t3-drag-010"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "number_ordering",
+    "prompt": "Drag the numbers into order, smallest first.",
+    "draggableItems": [
+      {
+        "id": "item-2",
+        "label": "14",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-1",
+        "label": "13",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "17",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "5",
+        "correctPosition": 0
+      }
+    ],
+    "id": "t3-drag-011"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "shape_properties",
+    "prompt": "Order the shapes from fewest sides to most sides.",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "rectangle",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "pentagon",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "hexagon",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "triangle",
+        "correctPosition": 0
+      }
+    ],
+    "id": "t3-drag-012"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "number_ordering",
+    "prompt": "Drag the numbers into order, smallest first.",
+    "draggableItems": [
+      {
+        "id": "item-1",
+        "label": "7",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "14",
+        "correctPosition": 2
+      },
+      {
+        "id": "item-3",
+        "label": "16",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "2",
+        "correctPosition": 0
+      }
+    ],
+    "id": "t3-drag-013"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "shape_properties",
+    "prompt": "Order the shapes from fewest sides to most sides.",
+    "draggableItems": [
+      {
+        "id": "item-3",
+        "label": "pentagon",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-0",
+        "label": "triangle",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "square",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-2",
+        "label": "rectangle",
+        "correctPosition": 2
+      }
+    ],
+    "id": "t3-drag-014"
+  },
+  {
+    "type": "drag_and_drop",
+    "tierId": 3,
+    "mathTopic": "number_ordering",
+    "prompt": "Drag the numbers into order, smallest first.",
+    "draggableItems": [
+      {
+        "id": "item-0",
+        "label": "8",
+        "correctPosition": 0
+      },
+      {
+        "id": "item-1",
+        "label": "9",
+        "correctPosition": 1
+      },
+      {
+        "id": "item-3",
+        "label": "20",
+        "correctPosition": 3
+      },
+      {
+        "id": "item-2",
+        "label": "19",
+        "correctPosition": 2
+      }
+    ],
+    "id": "t3-drag-015"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "counting_sequence",
+    "prompt": "Fill in the missing numbers.",
+    "sequence": [
+      {
+        "value": "6",
+        "isBlank": false
+      },
+      {
+        "value": "7",
+        "isBlank": false
+      },
+      {
+        "value": "8",
+        "isBlank": false
+      },
+      {
+        "value": "9",
+        "isBlank": false
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "11",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "13",
+      "11",
+      "14",
+      "15"
+    ],
+    "correctFills": [
+      "11"
+    ],
+    "id": "t3-pattern-001"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "repeating_pattern",
+    "prompt": "What is missing in the pattern?",
+    "sequence": [
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "2",
+        "isBlank": false
+      },
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "2",
+        "isBlank": true
+      },
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "2",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "2",
+      "3",
+      "6",
+      "5"
+    ],
+    "correctFills": [
+      "2"
+    ],
+    "id": "t3-pattern-002"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Fill in the missing numbers. Counting by 2s.",
+    "sequence": [
+      {
+        "value": "6",
+        "isBlank": false
+      },
+      {
+        "value": "8",
+        "isBlank": true
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "12",
+        "isBlank": false
+      },
+      {
+        "value": "14",
+        "isBlank": true
+      },
+      {
+        "value": "16",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "14",
+      "11",
+      "9",
+      "7",
+      "8"
+    ],
+    "correctFills": [
+      "8",
+      "14"
+    ],
+    "id": "t3-pattern-003"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "repeating_pattern",
+    "prompt": "What is missing in the pattern?",
+    "sequence": [
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "6",
+        "isBlank": false
+      },
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "6",
+        "isBlank": true
+      },
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "6",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "6",
+      "5",
+      "10",
+      "7"
+    ],
+    "correctFills": [
+      "6"
+    ],
+    "id": "t3-pattern-004"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Fill in the missing numbers. Counting by 10s.",
+    "sequence": [
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "20",
+        "isBlank": false
+      },
+      {
+        "value": "30",
+        "isBlank": true
+      },
+      {
+        "value": "40",
+        "isBlank": false
+      },
+      {
+        "value": "50",
+        "isBlank": false
+      },
+      {
+        "value": "60",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "11",
+      "21",
+      "30",
+      "31"
+    ],
+    "correctFills": [
+      "30"
+    ],
+    "id": "t3-pattern-005"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "counting_sequence",
+    "prompt": "Fill in the missing numbers.",
+    "sequence": [
+      {
+        "value": "5",
+        "isBlank": false
+      },
+      {
+        "value": "6",
+        "isBlank": true
+      },
+      {
+        "value": "7",
+        "isBlank": false
+      },
+      {
+        "value": "8",
+        "isBlank": false
+      },
+      {
+        "value": "9",
+        "isBlank": true
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "6",
+      "13",
+      "14",
+      "12",
+      "9"
+    ],
+    "correctFills": [
+      "6",
+      "9"
+    ],
+    "id": "t3-pattern-006"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Fill in the missing numbers. Counting by 2s.",
+    "sequence": [
+      {
+        "value": "8",
+        "isBlank": false
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "12",
+        "isBlank": false
+      },
+      {
+        "value": "14",
+        "isBlank": false
+      },
+      {
+        "value": "16",
+        "isBlank": true
+      },
+      {
+        "value": "18",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "16",
+      "18",
+      "9",
+      "13",
+      "11"
+    ],
+    "correctFills": [
+      "16",
+      "18"
+    ],
+    "id": "t3-pattern-007"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "counting_sequence",
+    "prompt": "Fill in the missing numbers.",
+    "sequence": [
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "5",
+        "isBlank": false
+      },
+      {
+        "value": "6",
+        "isBlank": true
+      },
+      {
+        "value": "7",
+        "isBlank": false
+      },
+      {
+        "value": "8",
+        "isBlank": false
+      },
+      {
+        "value": "9",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "6",
+      "11",
+      "12",
+      "13"
+    ],
+    "correctFills": [
+      "6"
+    ],
+    "id": "t3-pattern-008"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Fill in the missing numbers. Counting by 2s.",
+    "sequence": [
+      {
+        "value": "6",
+        "isBlank": false
+      },
+      {
+        "value": "8",
+        "isBlank": false
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "12",
+        "isBlank": true
+      },
+      {
+        "value": "14",
+        "isBlank": true
+      },
+      {
+        "value": "16",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "7",
+      "9",
+      "12",
+      "11",
+      "14"
+    ],
+    "correctFills": [
+      "12",
+      "14"
+    ],
+    "id": "t3-pattern-009"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "counting_sequence",
+    "prompt": "Fill in the missing numbers.",
+    "sequence": [
+      {
+        "value": "2",
+        "isBlank": false
+      },
+      {
+        "value": "3",
+        "isBlank": true
+      },
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "5",
+        "isBlank": false
+      },
+      {
+        "value": "6",
+        "isBlank": true
+      },
+      {
+        "value": "7",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "9",
+      "6",
+      "11",
+      "3",
+      "10"
+    ],
+    "correctFills": [
+      "3",
+      "6"
+    ],
+    "id": "t3-pattern-010"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "repeating_pattern",
+    "prompt": "What is missing in the pattern?",
+    "sequence": [
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "4",
+        "isBlank": false
+      },
+      {
+        "value": "4",
+        "isBlank": true
+      },
+      {
+        "value": "4",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "5",
+      "4",
+      "8",
+      "5"
+    ],
+    "correctFills": [
+      "4"
+    ],
+    "id": "t3-pattern-011"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Fill in the missing numbers. Counting by 10s.",
+    "sequence": [
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "20",
+        "isBlank": false
+      },
+      {
+        "value": "30",
+        "isBlank": false
+      },
+      {
+        "value": "40",
+        "isBlank": false
+      },
+      {
+        "value": "50",
+        "isBlank": true
+      },
+      {
+        "value": "60",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "31",
+      "50",
+      "21",
+      "11"
+    ],
+    "correctFills": [
+      "50"
+    ],
+    "id": "t3-pattern-012"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "counting_sequence",
+    "prompt": "Fill in the missing numbers.",
+    "sequence": [
+      {
+        "value": "6",
+        "isBlank": false
+      },
+      {
+        "value": "7",
+        "isBlank": true
+      },
+      {
+        "value": "8",
+        "isBlank": false
+      },
+      {
+        "value": "9",
+        "isBlank": true
+      },
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "11",
+        "isBlank": false
+      }
+    ],
+    "fillOptions": [
+      "9",
+      "14",
+      "15",
+      "7",
+      "13"
+    ],
+    "correctFills": [
+      "7",
+      "9"
+    ],
+    "id": "t3-pattern-013"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "repeating_pattern",
+    "prompt": "What is missing in the pattern?",
+    "sequence": [
+      {
+        "value": "5",
+        "isBlank": false
+      },
+      {
+        "value": "3",
+        "isBlank": false
+      },
+      {
+        "value": "5",
+        "isBlank": false
+      },
+      {
+        "value": "3",
+        "isBlank": false
+      },
+      {
+        "value": "5",
+        "isBlank": false
+      },
+      {
+        "value": "3",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "3",
+      "6",
+      "8",
+      "4"
+    ],
+    "correctFills": [
+      "3"
+    ],
+    "id": "t3-pattern-014"
+  },
+  {
+    "type": "pattern_completion",
+    "tierId": 3,
+    "mathTopic": "skip_counting",
+    "prompt": "Fill in the missing numbers. Counting by 5s.",
+    "sequence": [
+      {
+        "value": "10",
+        "isBlank": false
+      },
+      {
+        "value": "15",
+        "isBlank": false
+      },
+      {
+        "value": "20",
+        "isBlank": false
+      },
+      {
+        "value": "25",
+        "isBlank": false
+      },
+      {
+        "value": "30",
+        "isBlank": false
+      },
+      {
+        "value": "35",
+        "isBlank": true
+      }
+    ],
+    "fillOptions": [
+      "16",
+      "35",
+      "11",
+      "21"
+    ],
+    "correctFills": [
+      "35"
+    ],
+    "id": "t3-pattern-015"
+  }
+]
